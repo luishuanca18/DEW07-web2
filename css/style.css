@@ -13,6 +13,50 @@ body{
     font-family: Arial, Helvetica, sans-serif;  
 }
 
+.header{
+
+    align-items: center;
+    position: sticky;
+   
+
+
+}
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2F6B2F;
+    color: white;
+    padding: 15px 4%;
+    font-size: 15px;
+   
+
+}
+.contenedor-topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+}
+.lado4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px; 
+}
+.lado4 i{
+    color: white;
+
+}
+.lado1,
+.lado2,
+.lado3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 
 
 
