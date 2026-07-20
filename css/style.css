@@ -34,10 +34,13 @@ body{
 
 }
 .contenedor-topBar{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 250px;
+    gap: 400px;
+
+    
 }
 .lado4{
     display: flex;
@@ -78,7 +81,7 @@ body{
 
 }
 .imagen img{
-    height: 120px; 
+    height: 180px; 
     width: auto; 
     object-fit: cover;
 
@@ -161,9 +164,156 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* =====================================
+   FOOTER
+===================================== */
 
-
+.footer {
+    width: 100%;
+    background-color: #16853b;
+    color: #ffffff;
+    padding: 35px 60px;
 }
 
+.footer-contenedor {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.3fr 1.2fr 1.3fr;
+    gap: 25px;
+    align-items: start;
+    text-align: left;
+}
+
+.footer-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-columna h3 {
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-columna a {
+    color: #e5f5e9;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-columna a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+/* LOGO DEL FOOTER */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap: 15px;
+    margin-bottom:12px;
+}
+
+.footer-logo img{
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.footer-logo h2{
+    margin:0;
+    font-size:34px;
+    line-height:1;
+    color:#ffffff;
+}
+
+.footer-logo p{
+    margin:4px 0 0;
+    font-size:16px;
+    line-height: 1.2;
+    color:#dff5e4;
+}
+
+.footer-marca{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.copyright {
+    margin: 18px 0 0;
+    color: #dff5e4;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* MÉTODOS DE PAGO */
+
+.metodos-pago{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.metodos-pago img{
+    width:60px;
+    height:38px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:6px;
+    padding:4px;
+}
+
+
+/* =====================================
+   RESPONSIVE PARA TABLET
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-contenedor {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+}
+
+
+/* =====================================
+   RESPONSIVE PARA CELULAR
+===================================== */
+
+@media (max-width: 600px) {
+
+    .beneficios {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .footer {
+        padding: 40px 25px;
+    }
+
+    .footer-contenedor {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
 
 
