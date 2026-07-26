@@ -144,7 +144,7 @@ body {
 }
 
 .hero {
-  background-image: url(../imagenes/fondohero.png);
+  background-image: url(../imagenes/fondoHero.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
