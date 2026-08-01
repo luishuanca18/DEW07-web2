@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/comida.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>COMIDA MASCOTA</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
+
         <section class="topBar">
             <div class="contenedor-topBar">
                 <div class="lado1">
@@ -44,10 +44,10 @@
             </div>
             <nav class="menus">
                 <a href="#" class="activo">Inicio</a>
-                <a href="#">Comida</a>
+                <a href="comida.html">Comida</a>
                 <a href="ropa.html">Ropa</a>
                 <a href="#">Accesorios</a>
-                <a href="#">Juguetes</a>
+                <a href="jugetes.html">Juguetes</a>
                 <a href="#">Higiene</a>
                 <a href="#">Promociones</a>
                 <a href="#">Contacto</a>
@@ -65,6 +65,7 @@
         </section>
     </header>
 
+    <!-- CARRUSEL -->
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -97,79 +98,212 @@
         </button>
     </div>
     <br>
-    <section class="producto">
-        <div class="titulo">
-            <h2>COMIDAS PARA MASCOTAS</h2>
-            <p>Lo mejor para tus engreídos</p>
-        </div>
+    <!-- TITULO -->
+    <section class="titulo">
+        <h2>COMIDAS PARA MASCOTAS</h2>
+        <p>Lo mejor para tus engreídos</p>
     </section>
-    <div class="layout">
-        <aside class="sidebar sidebar-filtros">
-            <h3>FILTROS POR</h3>
-            <div class="grupo-filtro">
-                <h4>Tipo de Mascota</h4>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Tipo" value="Mascota" /> Perros
-                </label>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Tipo" value="Mascota" /> Gatos
-                </label>
+
+    <!-- CONTENIDO -->
+    <section class="contenido">
+        <!-- Filtros -->
+        <aside class="filtro">
+            <h2>FILTROS</h2>
+            <h3>Mascota</h3>
+
+            <label><input type="checkbox"> Perros</label>
+            <label><input type="checkbox"> Gatos</label>
+
+            <h3>Marca</h3>
+
+            <label><input type="checkbox"> Ricocat</label>
+            <label><input type="checkbox"> Ricocan</label>
+            <label><input type="checkbox"> Salvaje</label>
+
+            <h3>Tipo de Comida</h3>
+
+            <label><input type="checkbox"> Seco</label>
+            <label><input type="checkbox"> Húmedo</label>
+            <label><input type="checkbox"> Snacks</label>
+
+            <button>Limpiar filtros</button>
+        </aside>
+        <!-- Productos -->
+        <section class="productos">
+            <div class="card">
+                <img src="imagenes/Comida/Comida1.jpg" alt="Comida1">
+                <span class="tag">Alimento Seco Perro</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
             </div>
-            <div class="grupo-filtro">
-                <h4>Marca</h4>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Marca" value="Mascota" /> Ricocan
-                </label>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Marca" value="Mascota" /> Hills
-                </label>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Marca" value="Mascota" /> Salvaje
-                </label>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Marca" value="Mascota" /> Ricocat
-                </label>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Marca" value="Mascota" /> Proplan
-                </label>
+            <div class="card">
+                <img src="imagenes/Comida/Comida2.jpg" alt="Comida2">
+                <span class="tag">Alimento Seco Perro</span>
+                <h3>Pro plan Piel Sensible Adulto</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 359.90</h2>
+                <button>Comprar</button>
             </div>
-            <div class="grupo-filtro">
-                <h4>Tipo de Alimento</h4>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Tipo" value="Mascota" /> Hùmedo
-                </label>
-                <label class="opcion-filtro">
-                    <input type="checkbox" name="Tipo" value="Mascota" /> Seco
-                </label>
+            <div class="card">
+                <img src="imagenes/Comida/Comida3.jpg" alt="Comida3">
+                <span class="tag">Alimento Seco Perro</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
             </div>
-            <div class="grupo-filtro">
-                <h4>Precio</h4>
-                <div class="precio-rango">
-                    <input type="range" min="20" max="150" value="85" class="precio-slider">
-                    <div class="precio-valores">
-                        <span>S/ 20</span>
-                        <span>S/ 150</span>
+            <div class="card">
+                <img src="imagenes/Comida/Comida4.jpg" alt="Comida4">
+                <span class="tag">Alimento Seco Perro</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagenes/Comida/Comida5.jpg" alt="Comida5">
+                <span class="tag">Alimento Seco Perro</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagenes/Comida/Comida6.jpg" alt="Comida6">
+                <span class="tag">Alimento Seco Gato</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagenes/Comida/Comida7.jpg" alt="Comida7">
+                <span class="tag">Alimento Seco Gato</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagenes/Comida/Comida8.jpg" alt="Comida8">
+                <span class="tag">Alimento Seco Gato</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagenes/Comida/Comida9.jpg" alt="Comida9">
+                <span class="tag">Alimento Seco Gato</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagenes/Comida/Comida10.jpg" alt="Comida10">
+                <span class="tag">Alimento Seco Gato</span>
+                <h3>Dogxtreme Adulto Cordero</h3>
+                <p>Para perros adultos de todas las razas</p>
+                <h2>S/ 169.90</h2>
+                <button>Comprar</button>
+            </div>
+        </section>
+    </section>
+
+ <!-- FOOTER -->   
+    <footer class="footer">
+
+        <div class="footer-contenedor">
+
+            <!-- LOGO Y DESCRIPCIÓN -->
+
+            <div class="footer-columna footer-marca">
+
+                <div class="footer-logo">
+                    <img src="imagenes/logo patita.png" alt="PetLove">
+
+                    <div>
+                        <h2>PetLove</h2>
+                        <p>Todo para tu mascota</p>
                     </div>
                 </div>
+
+                <p class="copyright">
+                    © 2026 PetLove.<br>
+                    Todos los derechos reservados.
+                </p>
+
             </div>
-        </aside>
 
-        <div class="cards">
-            <article class="card">
-                <img src="imagenes/Comida/Comida1.jpg" alt="Comida para perro">
-                <div class="card_body">
-                    <span class="tag">Comida Perro</span>
-                    <p>Dogxtreme Adulto Cordero Alimento Seco Perro 12 Kg</p>
-                    <p class="precio">S/. 150.90</p>
-                    <button class="btn-carrito" title="Añadir al carrito">
-                        <i class="bi bi-cart-plus"></i>
-                    </button>
+
+            <!-- CATEGORÍAS -->
+
+            <div class="footer-columna">
+
+                <h3>Categorías</h3>
+
+                <a href="comida.html">Comidas</a>
+                <a href="ropa.html">Ropa</a>
+                <a href="accesorios.html">Accesorios</a>
+                <a href="#">Juguetes</a>
+                <a href="#">Higiene</a>
+                <a href="#">Promociones</a>
+
+            </div>
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="footer-columna">
+
+                <h3>Información</h3>
+
+                <a href="#">Nosotros</a>
+                <a href="#">Envíos y entregas</a>
+                <a href="#">Métodos de pago</a>
+                <a href="#">Cambios y devoluciones</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+
+            </div>
+
+
+            <!-- AYUDA -->
+
+            <div class="footer-columna">
+
+                <h3>Ayuda</h3>
+
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Guía de tallas</a>
+                <a href="#">Cuidados de tu mascota</a>
+                <a href="#">Contacto</a>
+
+            </div>
+
+
+            <!-- MÉTODOS DE PAGO -->
+
+            <div class="footer-columna">
+
+                <h3>Métodos de pago</h3>
+
+                <div class="metodos-pago">
+                    <img src="imagenes/visa.png">
+                    <img src="imagenes/mastercard.png">
+                    <img src="imagenes/yape.png">
+                    <img src="imagenes/plin.png">
                 </div>
-            </article>
+
+            </div>
+
         </div>
-    </div>
 
-
+    </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
