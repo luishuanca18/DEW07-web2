@@ -793,38 +793,5 @@ body {
 
 
 
-/* =====================================
-   RESPONSIVE PARA TABLET
-===================================== */
 
-@media (max-width: 1000px) {
-  .beneficios {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-contenedor {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-  }
-}
-
-/* =====================================
-   RESPONSIVE PARA CELULAR
-===================================== */
-
-@media (max-width: 600px) {
-  .beneficios {
-    grid-template-columns: 1fr;
-    padding: 25px;
-  }
-
-  .footer {
-    padding: 40px 25px;
-  }
-
-  .footer-contenedor {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-}
 
