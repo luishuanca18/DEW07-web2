@@ -43,10 +43,10 @@
                 <img src="imagenes/logo.png" alt="logo">
             </div>
             <nav class="menus">
-                <a href="#" class="activo">Inicio</a>
+                <a href="index.html" class="activo">Inicio</a>
                 <a href="comida.html">Comida</a>
                 <a href="ropa.html">Ropa</a>
-                <a href="#">Accesorios</a>
+                <a href="accesorios.html">Accesorios</a>
                 <a href="jugetes.html">Juguetes</a>
                 <a href="#">Higiene</a>
                 <a href="#">Promociones</a>
@@ -110,200 +110,297 @@
         <aside class="filtro">
             <h2>FILTROS</h2>
             <h3>Mascota</h3>
-
-            <label><input type="checkbox"> Perros</label>
-            <label><input type="checkbox"> Gatos</label>
+            <label><input type="checkbox" class="filtro-input" data-filtro="mascota" value="perros"> Perros</label>
+            <label><input type="checkbox" class="filtro-input" data-filtro="mascota" value="gatos"> Gatos</label>
 
             <h3>Marca</h3>
-
-            <label><input type="checkbox"> Ricocat</label>
-            <label><input type="checkbox"> Ricocan</label>
-            <label><input type="checkbox"> Salvaje</label>
+            <label><input type="checkbox" class="filtro-input" data-filtro="marca" value="ricocat"> Ricocat</label>
+            <label><input type="checkbox" class="filtro-input" data-filtro="marca" value="ricocan"> Ricocan</label>
+            <label><input type="checkbox" class="filtro-input" data-filtro="marca" value="salvaje"> Salvaje</label>
 
             <h3>Tipo de Comida</h3>
+            <label><input type="checkbox" class="filtro-input" data-filtro="tipo" value="seco"> Seco</label>
+            <label><input type="checkbox" class="filtro-input" data-filtro="tipo" value="humedo"> Húmedo</label>
+            <label><input type="checkbox" class="filtro-input" data-filtro="tipo" value="snacks"> Snacks</label>
 
-            <label><input type="checkbox"> Seco</label>
-            <label><input type="checkbox"> Húmedo</label>
-            <label><input type="checkbox"> Snacks</label>
-
-            <button>Limpiar filtros</button>
+            <button id="btnLimpiarFiltros">Limpiar filtros</button>
         </aside>
         <!-- Productos -->
         <section class="productos">
-            <div class="card">
+            <div class="card" data-mascota="perros" data-marca="dogxtreme" data-tipo="seco">
                 <img src="imagenes/Comida/Comida1.jpg" alt="Comida1">
                 <span class="tag">Alimento Seco Perro</span>
                 <h3>Dogxtreme Adulto Cordero</h3>
                 <p>Para perros adultos de todas las razas</p>
                 <h2>S/ 169.90</h2>
-                <button>Comprar</button>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
+            <div class="card" data-mascota="perros" data-marca="proplan" data-tipo="seco">
                 <img src="imagenes/Comida/Comida2.jpg" alt="Comida2">
                 <span class="tag">Alimento Seco Perro</span>
                 <h3>Pro plan Piel Sensible Adulto</h3>
-                <p>Para perros adultos de todas las razas</p>
+                <p>Equilibrio metabólico, salud digestiva y protección corporal</p>
                 <h2>S/ 359.90</h2>
-                <button>Comprar</button>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
+            <div class="card" data-mascota="perros" data-marca="salvaje" data-tipo="seco">
                 <img src="imagenes/Comida/Comida3.jpg" alt="Comida3">
                 <span class="tag">Alimento Seco Perro</span>
-                <h3>Dogxtreme Adulto Cordero</h3>
-                <p>Para perros adultos de todas las razas</p>
-                <h2>S/ 169.90</h2>
-                <button>Comprar</button>
+                <h3>Salvaje Adulto Con Pollo</h3>
+                <p>Alimentación Completa y Vitalidad</p>
+                <h2>S/ 164.90</h2>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
+            <div class="card" data-mascota="perros" data-marca="miocane" data-tipo="seco">
                 <img src="imagenes/Comida/Comida4.jpg" alt="Comida4">
                 <span class="tag">Alimento Seco Perro</span>
-                <h3>Dogxtreme Adulto Cordero</h3>
-                <p>Para perros adultos de todas las razas</p>
-                <h2>S/ 169.90</h2>
-                <button>Comprar</button>
+                <h3>Mio Cane Premium Adulto 15 kg</h3>
+                <p>Nutricional completa, sabrosa y balanceada</p>
+                <h2>S/ 171.90</h2>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
-                <img src="imagenes/Comida/Comida5.jpg" alt="Comida5">
-                <span class="tag">Alimento Seco Perro</span>
-                <h3>Dogxtreme Adulto Cordero</h3>
-                <p>Para perros adultos de todas las razas</p>
-                <h2>S/ 169.90</h2>
-                <button>Comprar</button>
-            </div>
-            <div class="card">
+            <div class="card" data-mascota="gatos" data-marca="royalcanin" data-tipo="seco">
                 <img src="imagenes/Comida/Comida6.jpg" alt="Comida6">
                 <span class="tag">Alimento Seco Gato</span>
-                <h3>Dogxtreme Adulto Cordero</h3>
-                <p>Para perros adultos de todas las razas</p>
-                <h2>S/ 169.90</h2>
-                <button>Comprar</button>
+                <h3>Royal Canin Gato Fhn Kitten 2 Kg</h3>
+                <p>Nutrición Clínica y Precisión Veterinario</p>
+                <h2>S/ 143.90</h2>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
+            <div class="card" data-mascota="gatos" data-marca="hills" data-tipo="seco">
                 <img src="imagenes/Comida/Comida7.jpg" alt="Comida7">
                 <span class="tag">Alimento Seco Gato</span>
-                <h3>Dogxtreme Adulto Cordero</h3>
-                <p>Para perros adultos de todas las razas</p>
-                <h2>S/ 169.90</h2>
-                <button>Comprar</button>
+                <h3>Hills SD Mature 7 Lb Adulto + 7 Años 3.17 Kg</h3>
+                <p>Nutrición balanceada</p>
+                <h2>S/ 187.90</h2>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
+            <div class="card" data-mascota="gatos" data-marca="catxtreme" data-tipo="seco">
                 <img src="imagenes/Comida/Comida8.jpg" alt="Comida8">
                 <span class="tag">Alimento Seco Gato</span>
-                <h3>Dogxtreme Adulto Cordero</h3>
-                <p>Para perros adultos de todas las razas</p>
-                <h2>S/ 169.90</h2>
-                <button>Comprar</button>
+                <h3>Catxtreme Adulto Esterilizado Pollo 2.5 Kg</h3>
+                <p>Aportan proteínas, vitaminas y minerales</p>
+                <h2>S/ 62.90</h2>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
+            <div class="card" data-mascota="gatos" data-marca="catchow" data-tipo="seco">
                 <img src="imagenes/Comida/Comida9.jpg" alt="Comida9">
                 <span class="tag">Alimento Seco Gato</span>
-                <h3>Dogxtreme Adulto Cordero</h3>
-                <p>Para perros adultos de todas las razas</p>
-                <h2>S/ 169.90</h2>
-                <button>Comprar</button>
+                <h3>Cat Chow Esterilizado Defense Plus 3kg</h3>
+                <p>Garantiza una excelente palatabilidad</p>
+                <h2>S/ 57.90</h2>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
-                <img src="imagenes/Comida/Comida10.jpg" alt="Comida10">
-                <span class="tag">Alimento Seco Gato</span>
-                <h3>Dogxtreme Adulto Cordero</h3>
-                <p>Para perros adultos de todas las razas</p>
-                <h2>S/ 169.90</h2>
-                <button>Comprar</button>
+            <div class="card" data-mascota="perros" data-marca="ricocan" data-tipo="humedo">
+                <img src="imagenes/Comida/Humedo1.jpg" alt="Humedo1">
+                <span class="tag">Alimento Húmedo Perro</span>
+                <h3>Ricocan Adulto Paté de Cordero 312 g</h3>
+                <p>Alimento húmedo premium</p>
+                <h2>S/ 5.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="perros" data-marca="ricocan" data-tipo="humedo">
+                <img src="imagenes/Comida/Humedo2.jpg" alt="Humedo2">
+                <span class="tag">Alimento Húmedo Perro</span>
+                <h3>Ricocan Adulto Paté de Pollo 330 g</h3>
+                <p>Alimento húmedo premium</p>
+                <h2>S/ 5.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="perros" data-marca="canbo" data-tipo="humedo">
+                <img src="imagenes/Comida/Humedo3.jpg" alt="Humedo3">
+                <span class="tag">Alimento Húmedo Perro</span>
+                <h3>Canbo Enlatado Hipoalergenico 330 g</h3>
+                <p>Fortalecimiento de la barrera cutánea</p>
+                <h2>S/ 14.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="perros" data-marca="canbo" data-tipo="humedo">
+                <img src="imagenes/Comida/Humedo4.jpg" alt="Humedo4">
+                <span class="tag">Alimento Húmedo Perro</span>
+                <h3>Canbo Dog Paté Flexibilidad y Movilidad 330g</h3>
+                <p>Promueven la salud articular</p>
+                <h2>S/ 12.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="gatos" data-marca="fancy" data-tipo="humedo">
+                <img src="imagenes/Comida/Humedo5.jpg" alt="Humedo5">
+                <span class="tag">Alimento Húmedo Gato</span>
+                <h3>Fancy Feast Al Horno Con Salmon En Salsa Y Otros 85 g</h3>
+                <p>Alimentación Completa y Vitalidad</p>
+                <h2>S/ 7.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="gatos" data-marca="ricocat" data-tipo="humedo">
+                <img src="imagenes/Comida/Humedo6.jpg" alt="Humedo6">
+                <span class="tag">Alimento Húmedo Gato</span>
+                <h3>Ricocat Adulto Paté Sardina Pollo 330 g</h3>
+                <p>Garantiza una excelente palatabilidad</p>
+                <h2>S/ 6.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="gatos" data-marca="applaws" data-tipo="humedo">
+                <img src="imagenes/Comida/Humedo7.jpg" alt="Humedo7">
+                <span class="tag">Alimento Húmedo Gato</span>
+                <h3>Applaws Filete De Atun Con Camaron X 70 Gr</h3>
+                <p>Una propuesta nutricional completa</p>
+                <h2>S/ 8.80</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="gatos" data-marca="parpets" data-tipo="humedo">
+                <img src="imagenes/Comida/Humedo8.jpg" alt="Humedo8">
+                <span class="tag">Alimento Húmedo Gato</span>
+                <h3>Par Pets gato paté de pescado 160g</h3>
+                <p>Fortalece el pelaje y brinda la energía activa</p>
+                <h2>S/ 9.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="perros" data-marca="snout" data-tipo="snacks">
+                <img src="imagenes/Comida/Snack1.jpg" alt="Snack1">
+                <span class="tag">Snack Perro</span>
+                <h3>Snout Hueso Deshidratado Minibone Ahumado De Cerdo</h3>
+                <p>Sabrosa y balanceada</p>
+                <h2>S/ 16.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="perros" data-marca="wanpy" data-tipo="snacks">
+                <img src="imagenes/Comida/Snack2.jpg" alt="Snack2">
+                <span class="tag">Snack Perro</span>
+                <h3>Soft Duck Jerky Strips</h3>
+                <p>Elaborado con ingredientes seleccionados</p>
+                <h2>S/ 19.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="perros" data-marca="naturalistic" data-tipo="snacks">
+                <img src="imagenes/Comida/Snack3.jpg" alt="Snack3">
+                <span class="tag">Snack Perro</span>
+                <h3>Naturalistic Tiras De Cordero 100 g</h3>
+                <p>Protege la salud digestiva</p>
+                <h2>S/ 13.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="perros" data-marca="mimma" data-tipo="snacks">
+                <img src="imagenes/Comida/Snack4.jpg" alt="Snack4">
+                <span class="tag">Snack Perro</span>
+                <h3>Carnitas Tradicional 30g</h3>
+                <p>Formulación perfectamente adaptada</p>
+                <h2>S/ 5.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="gatos" data-marca="churu" data-tipo="snacks">
+                <img src="imagenes/Comida/Snack5.jpg" alt="Snack5">
+                <span class="tag">Snack Gato</span>
+                <h3>Churu Sabor Pollo con Camarón 60Gr</h3>
+                <p>Mayor hidratación</p>
+                <h2>S/ 12.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="gatos" data-marca="dentalife" data-tipo="snacks">
+                <img src="imagenes/Comida/Snack6.jpg" alt="Snack6">
+                <span class="tag">Snack Gato</span>
+                <h3>Dentalife Gatos 40g Xl</h3>
+                <p>Cuidado focalizado en dental</p>
+                <h2>S/ 9.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="gatos" data-marca="rambala" data-tipo="snacks">
+                <img src="imagenes/Comida/Snack7.jpg" alt="Snack7">
+                <span class="tag">Snack Gato</span>
+                <h3>Rambala Bites Tarta De Pescado 100 g</h3>
+                <p>Alimentación Completa y Vitalidad</p>
+                <h2>S/ 16.90</h2>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="card" data-mascota="gatos" data-marca="gnawlers" data-tipo="snacks">
+                <img src="imagenes/Comida/Snack8.jpg" alt="Snack8">
+                <span class="tag">Snack Gato</span>
+                <h3>Gnawlers Lick'N'Likable Yogurt & Arándanos 100Gr</h3>
+                <p>Una manera saludable de consentir a tu gato</p>
+                <h2>S/ 13.90</h2>
+                <button class="btn-comprar">Comprar</button>
             </div>
         </section>
     </section>
 
- <!-- FOOTER -->   
+    <!-- FOOTER -->
     <footer class="footer">
+
+        <div class="footer-hoja-informativa">
+            <div class="hoja-informativa-texto">
+                <h3>¡Únete a la familia PetLove! 🐾</h3>
+                <p>Suscríbete y recibe un 10% de descuento en tu primera compra</p>
+            </div>
+            <div class="hoja-informativa-form">
+                <input type="email" placeholder="Ingresa tu correo electrónico..." required>
+                <button type="button">Suscribirme</button>
+            </div>
+        </div>
+
 
         <div class="footer-contenedor">
 
-            <!-- LOGO Y DESCRIPCIÓN -->
 
             <div class="footer-columna footer-marca">
-
                 <div class="footer-logo">
-                    <img src="imagenes/logo patita.png" alt="PetLove">
-
-                    <div>
-                        <h2>PetLove</h2>
-                        <p>Todo para tu mascota</p>
-                    </div>
+                    <img src="imagenes/logo.png" alt="PetLove Logo">
                 </div>
-
-                <p class="copyright">
-                    © 2026 PetLove.<br>
-                    Todos los derechos reservados.
-                </p>
-
+                <p class="slogan-footer">Todo para tu mejor amigo en un solo lugar.</p>
+                <div class="footer-redes">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
             </div>
 
 
-            <!-- CATEGORÍAS -->
-
             <div class="footer-columna">
-
                 <h3>Categorías</h3>
-
-                <a href="comida.html">Comidas</a>
-                <a href="ropa.html">Ropa</a>
-                <a href="accesorios.html">Accesorios</a>
+                <a href="#">Comidas</a>
+                <a href="#">Ropa</a>
+                <a href="#">Accesorios</a>
                 <a href="#">Juguetes</a>
                 <a href="#">Higiene</a>
                 <a href="#">Promociones</a>
-
             </div>
 
 
-            <!-- INFORMACIÓN -->
-
             <div class="footer-columna">
-
                 <h3>Información</h3>
-
                 <a href="#">Nosotros</a>
                 <a href="#">Envíos y entregas</a>
                 <a href="#">Métodos de pago</a>
                 <a href="#">Cambios y devoluciones</a>
                 <a href="#">Términos y condiciones</a>
                 <a href="#">Política de privacidad</a>
-
             </div>
 
 
-            <!-- AYUDA -->
-
             <div class="footer-columna">
-
-                <h3>Ayuda</h3>
-
+                <h3>Atención al Cliente</h3>
                 <a href="#">Preguntas frecuentes</a>
                 <a href="#">Guía de tallas</a>
                 <a href="#">Cuidados de tu mascota</a>
                 <a href="#">Contacto</a>
-
-            </div>
-
-
-            <!-- MÉTODOS DE PAGO -->
-
-            <div class="footer-columna">
-
-                <h3>Métodos de pago</h3>
-
-                <div class="metodos-pago">
-                    <img src="imagenes/visa.png">
-                    <img src="imagenes/mastercard.png">
-                    <img src="imagenes/yape.png">
-                    <img src="imagenes/plin.png">
-                </div>
-
+                <p class="atencion-horario"><i class="bi bi-clock"></i> Lunes a Sábado: 8am - 8pm</p>
             </div>
 
         </div>
 
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 PetLove. Todos los derechos reservados.</p>
+            <div class="metodos-pago">
+                <img src="imagenes/visa.png" alt="Visa">
+                <img src="imagenes/Mastercard.png" alt="Mastercard">
+                <img src="imagenes/Yape.png" alt="Yape">
+                <img src="imagenes/Plin.png" alt="Plin">
+            </div>
+        </div>
+
     </footer>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
 </body>
 
 </html>
