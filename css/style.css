@@ -731,6 +731,83 @@ body {
   border-radius: 6px;
 }
 
+/* ===========================
+   PANEL DEL CARRITO
+=========================== */
+
+.panel-carrito {
+    position: fixed;
+    top: 0;
+    right: -420px;
+
+    width: 380px;
+    height: 100vh;
+
+    background: white;
+    box-shadow: -4px 0 15px rgba(0,0,0,.15);
+
+    z-index: 9999;
+    padding: 20px;
+
+    transition: .3s;
+    overflow-y: auto;
+}
+
+.panel-carrito.activo {
+    right: 0;
+}
+
+.carrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.carrito-header button {
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.item-carrito {
+    display: grid;
+    grid-template-columns: 70px 1fr 30px;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-carrito img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.item-carrito p {
+    color: #16853b;
+    font-weight: bold;
+}
+
+.eliminar-producto {
+    border: none;
+    background: none;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.carrito-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
 
