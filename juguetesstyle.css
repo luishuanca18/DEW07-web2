@@ -31,14 +31,11 @@
     padding: 15px 4%;
     font-size: 15px;
     }
-
-
     .contenedor-topBar {
     display: flex;
     align-items: center;
     gap: 50px;
     }
-
 
     .lado1,
     .lado2,
@@ -49,14 +46,12 @@
     gap: 5px;
     }
 
-
     .lado4 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 30px;
     }
-
 
     .lado4 i {
     color: var(--color-white);
@@ -77,7 +72,6 @@
     align-items: center;
     }
 
-
     .imagen img {
     height: 120px;
     width: auto;
@@ -91,7 +85,6 @@
     gap: 20px;
     }
 
-
     .menus a {
     text-decoration: none;
     color: var(--color-black);
@@ -99,7 +92,6 @@
     cursor: pointer;
     margin: 0 15px;
     }
-
 
     .menus a:hover {
     border-bottom: 3px solid var(--color-verdePrincipal);
@@ -130,7 +122,6 @@
     border-radius: 10px;
     }
 
-
     .iconos i:hover {
     color: var(--color-verdePrincipal);
     }
@@ -149,7 +140,6 @@
     cursor: pointer;
     padding: 5px;
     }
-
 
     .carrito-numero {
     position: absolute;
@@ -280,8 +270,6 @@
     transition: all 0.3s ease;
 }
 
-
-
 .productos {
     flex: 1;
     display: grid;
@@ -339,60 +327,261 @@
 .producto button:hover{
     background-color: #116c30;
 }
-.footer{
-    background-color: var(--color-verdePrincipal);
-    color: var(--color-white);
-    padding: 40px 5%;
+.footer {
+    width: 100%;
+    background-color: #16853b;
+    color: white;
+    padding: 45px 7% 15px;
+    margin-top: 50px;
 }
 
-.footer-contenedor{
+
+
+.footer-suscripcion {
+    max-width: 1600px;
+    margin: 0 auto 40px;
+    padding: 22px 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+}
+
+.suscripcion-texto h3 {
+    margin: 0 0 6px;
+    font-size: 21px;
+    color: white;
+}
+
+.suscripcion-texto p {
+    margin: 0;
+    font-size: 13px;
+    color: #dff5e4;
+}
+
+.suscripcion-form {
+    display: flex;
+    gap: 10px;
+}
+
+.suscripcion-form input {
+    width: 255px;
+    padding: 12px 18px;
+
+    border: none;
+    outline: none;
+    border-radius: 30px;
+
+    font-size: 13px;
+}
+
+.suscripcion-form button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: white;
+    color: #16853b;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.suscripcion-form button:hover {
+    background-color: #dff5e4;
+    transform: translateY(-2px);
+}
+
+
+
+.footer-contenedor {
+    max-width: 1600px;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 30px;
+
+    gap: 50px;
+    padding-bottom: 40px;
 }
 
-.footer-columna{
+
+.footer-columna {
     display: flex;
     flex-direction: column;
-    flex: 1 1 200px;
+    align-items: flex-start;
 }
 
-.footer-logo{
+.footer-columna h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: var(--color-white);
+}
+
+.footer-columna a {
+    color: #dff5e4;
+    text-decoration: none;
+    font-size: 16px; 
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.footer-columna a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-marca {
+    min-width: 230px;
+}
+
+.footer-logo img {
+    width: 110px;
+    height: auto;
+    margin-bottom: 15px;
+
+    filter: brightness(0) invert(1);
+}
+
+.slogan-footer {
+    font-size: 16px;
+    color: #dff5e4;
+    margin-bottom: 15px;
+    max-width: 220px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-redes a {
+    width: 36px;
+    height: 36px;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.footer-redes a:hover {
+    background-color: white;
+    color: #16853b;
+
+    transform: translateY(-3px);
+    padding-left: 0;
+}
+
+
+
+.atencion-horario {
+    font-size: 15px; 
+    color: #dff5e4;
+    margin-top: 10px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 6px;
 }
 
-.footer-logo img{
-    width: 60px;
-    height: 60px;
-}
+.footer-bottom {
+    max-width: 1600px;
+    margin: 0 auto;
 
-.footer-columna h3{
-    margin-bottom: 15px;
-}
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 
-.footer-columna a{
-    color: white;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
+    padding-top: 20px;
 
-.footer-columna a:hover{
-    text-decoration: underline;
-}
-
-.metodos-pago{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
     gap: 20px;
 }
 
-.metodos-pago img{
-    width: 50px;
-    height: auto;
-    border-radius: 10px;
+.copyright {
+    font-size: 15px; 
+    color: #dff5e4;
+}
+
+
+.metodos-pago {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.metodos-pago img {
+    height: 28px;
+    width: auto;
+
+    padding: 3px 6px;
+
+    background-color: white;
+    border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+
+    .footer {
+        padding: 35px 5% 20px;
+    }
+
+    .footer-suscripcion {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .suscripcion-form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .suscripcion-form input {
+        width: 100%;
+    }
+
+    .suscripcion-form button {
+        width: 100%;
+    }
+
+    .footer-contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-columna {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-marca {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 }
