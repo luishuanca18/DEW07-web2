@@ -15,7 +15,6 @@
 
     <header class="header">
 
-        <!-- Barra superior -->
         <section class="topBar">
 
             <div class="contenedor-topBar">
@@ -46,8 +45,6 @@
             </div>
 
         </section>
-
-        <!-- Navbar -->
 
         <section class="navbar-principal">
 
@@ -82,18 +79,10 @@
     </header>
 
     <main>
-
-        <!-- Banner -->
-
         <section class="banner">
             <img src="imagenes/perritos.jpg" alt="Perritos jugando">
         </section>
-
-        <!-- Catálogo -->
-
         <section class="catalogo">
-
-            <!-- Filtros -->
 
             <aside class="filtros">
 
@@ -117,10 +106,15 @@
 
             </aside>
 
-            <!-- Productos -->
-
             <section class="productos">
-
+                <div class="buscador">
+              <input 
+                type="text" 
+                id="buscadorJuguetes" 
+                placeholder="Buscar juguete...">
+                <i class="bi bi-search"></i>
+                </div>
+                <div id="mensajeCarrito" class="mensaje-carrito"></div>
                 <div class="producto">
                     <img src="imagenes/Juguetes/MordedorDehueso.jpg" alt="Mordedor de hueso">
                     <h3>Mordedor de hueso</h3>
@@ -238,8 +232,6 @@
 
     <div class="footer-contenedor">
 
-        <!-- LOGO Y DESCRIPCIÓN -->
-
         <div class="footer-columna footer-marca">
 
            <div class="footer-logo">
@@ -258,9 +250,6 @@
 
         </div>
 
-
-        <!-- CATEGORÍAS -->
-
         <div class="footer-columna">
 
             <h3>Categorías</h3>
@@ -273,10 +262,6 @@
             <a href="#">Promociones</a>
 
         </div>
-
-
-        <!-- INFORMACIÓN -->
-
         <div class="footer-columna">
 
             <h3>Información</h3>
@@ -290,9 +275,6 @@
 
         </div>
 
-
-        <!-- AYUDA -->
-
         <div class="footer-columna">
 
             <h3>Ayuda</h3>
@@ -303,10 +285,6 @@
             <a href="#">Contacto</a>
 
         </div>
-
-
-        <!-- MÉTODOS DE PAGO -->
-
         <div class="footer-columna">
 
             <h3>Métodos de pago</h3>
@@ -323,6 +301,7 @@
     </div>
 
 </footer>
+<script src="juguetes.js"></script>
 
 </body>
 
