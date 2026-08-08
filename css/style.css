@@ -751,40 +751,43 @@ body {
   }
 
   .navbar-principal {
+    height: auto;
     flex-direction: column;
     padding: 15px 3%;
-    gap: 15px;
+    gap: 12px;
   }
 
   .imagen img {
-    height: 75px;
+    height: 70px;
   }
 
   .menus {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px 12px;
+    gap: 6px 8px;
   }
 
   .menus a {
     font-size: 14px;
-    padding: 4px 8px;
+    margin: 2px 4px;
+    padding: 4px 6px;
   }
 
   .iconos {
     gap: 18px;
+    margin-top: 5px;
   }
 
   .hero {
     height: auto;
     min-height: auto;
-    padding: 30px 4% 50px;
+    padding: 20px 4% 30px;
   }
 
   .contenedor-hero {
     flex-direction: column-reverse;
     text-align: center;
-    gap: 25px;
+    gap: 15px;
     padding: 0;
   }
 
@@ -792,42 +795,50 @@ body {
     width: 100%;
     align-items: center;
     text-align: center;
+    padding-left: 0;
   }
 
   .texto-hero h1 {
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
   }
 
   .ph2 {
     width: 100%;
     text-align: center;
     font-size: 14px;
+    margin-top: 10px;
   }
 
   .imagen-hero {
     width: 100%;
-    max-width: 340px;
+    max-width: 320px;
   }
 
   .imagen-hero img {
     width: 100%;
     height: auto;
-    max-height: 260px;
+    max-height: 240px;
     object-fit: contain;
   }
 
   .buttons-hero {
     justify-content: center;
     gap: 12px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   .buttons-hero button,
   .buttons-hero a {
     width: 100%;
-    max-width: 250px;
+    max-width: 260px;
     text-align: center;
   }
 
@@ -836,7 +847,8 @@ body {
     flex-direction: column;
     gap: 15px;
     padding: 20px;
-    margin-top: -30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
   }
 
   .beneficio-item {
@@ -864,8 +876,29 @@ body {
   }
 
   .imagenes-categorias {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+  }
+
+  .cards-categorias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  .cards-categorias img {
+    width: 100%;
+    max-width: 110px;
+    height: 110px;
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  .cards-categorias p {
+    font-size: 15px;
   }
 
   .marcas-favoritas {
@@ -878,8 +911,29 @@ body {
   }
 
   .imagenes-marcas {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .cards-marcas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  .cards-marcas img {
+    width: 100%;
+    max-width: 85px;
+    height: 85px;
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  .cards-marcas p {
+    font-size: 13px;
   }
 
   .promociones {
@@ -978,6 +1032,39 @@ body {
     gap: 15px;
   }
 }
+
+@media (max-width: 600px) {
+  .imagenes-categorias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .cards-categorias img {
+    max-width: 95px;
+    height: 95px;
+    margin: 8px auto;
+  }
+
+  .cards-categorias p {
+    font-size: 14px;
+  }
+
+  .imagenes-marcas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .cards-marcas img {
+    max-width: 80px;
+    height: 80px;
+    margin: 8px auto;
+  }
+
+  .cards-marcas p {
+    font-size: 13px;
+  }
+}
+
 
 
 /* ===========================

@@ -64,7 +64,7 @@
   margin-bottom: 40px;
 }
 
-/* Sidebar Filtros */
+
 .sidebar-filtros {
   width: 260px;
   background-color: #ffffff;
@@ -123,7 +123,6 @@
   background-color: #126b2f;
 }
 
-/* Rejilla de Productos */
 .grid-productos-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
