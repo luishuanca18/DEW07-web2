@@ -618,6 +618,8 @@ body {
 }
 
 
+
+
 .footer-contenedor {
   display: flex;
   justify-content: space-between;
@@ -730,6 +732,253 @@ body {
   padding: 3px 6px;
   border-radius: 6px;
 }
+/* //////////////////// */
+
+@media (max-width: 900px) {
+  .topBar {
+    padding: 8px 3%;
+    font-size: 12px;
+  }
+
+  .contenedor-topBar {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .lado4 {
+    display: none;
+  }
+
+  .navbar-principal {
+    flex-direction: column;
+    padding: 15px 3%;
+    gap: 15px;
+  }
+
+  .imagen img {
+    height: 75px;
+  }
+
+  .menus {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
+  }
+
+  .menus a {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .iconos {
+    gap: 18px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding: 30px 4% 50px;
+  }
+
+  .contenedor-hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 25px;
+    padding: 0;
+  }
+
+  .texto-hero {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto-hero h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .ph2 {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .imagen-hero {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .imagen-hero img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: contain;
+  }
+
+  .buttons-hero {
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .buttons-hero button,
+  .buttons-hero a {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .beneficios-hero {
+    width: 92%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin-top: -30px;
+  }
+
+  .beneficio-item {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.2);
+    padding-bottom: 12px;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .beneficio-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .categorias-populares {
+    width: 92%;
+    margin-top: 35px;
+  }
+
+  .titulo-categorias h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .imagenes-categorias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .marcas-favoritas {
+    width: 92%;
+  }
+
+  .marcas-favoritas h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .imagenes-marcas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .promociones {
+    width: 92%;
+  }
+
+  .contenedor-promociones {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .promociones-box {
+    width: 100%;
+    height: auto;
+    padding: 25px 20px;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .descripcion-promociones {
+    align-items: center;
+    width: 100%;
+  }
+
+  .descripcion-promociones h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .descripcion-promociones p {
+    text-align: center;
+  }
+
+  .imagen-promociones {
+    width: 100%;
+    height: 160px;
+  }
+
+  .contenedor-garantias {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .footer {
+    padding: 30px 5% 20px;
+  }
+
+  .footer-hoja-informativa {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .hoja-informativa-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hoja-informativa-form input {
+    width: 100%;
+  }
+
+  .hoja-informativa-form button {
+    width: 100%;
+  }
+
+  .footer-contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-columna {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .slogan-footer {
+    max-width: 100%;
+  }
+
+  .footer-redes {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 
 /* ===========================
    PANEL DEL CARRITO
