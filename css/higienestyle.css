@@ -9,18 +9,18 @@
   margin-bottom: 25px;
 }
 
-.breadcrumb {
+.paginacion {
   font-size: 14px;
   color: #666;
   margin-bottom: 15px;
 }
 
-.breadcrumb a {
+.paginacion a {
   color: var(--color-verdePrincipal);
   text-decoration: none;
 }
 
-.breadcrumb span {
+.paginacion span {
   font-weight: bold;
   color: var(--color-black);
 }

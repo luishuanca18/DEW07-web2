@@ -16,6 +16,7 @@ body {
 .header {
   align-items: center;
   position: sticky;
+
 }
 .topBar {
   display: flex;
