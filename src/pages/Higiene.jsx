@@ -8,6 +8,7 @@ export default function Higiene() {
   const [categoriaElegida, setCategoriaElegida] = useState('todas')
   const[mascotaElegida, setMascotaElegida] = useState('todas')
   const [presentacionElegida, setPresentacionElegida] = useState('todas')
+  const [ordenElegido, setOrdenElegido] = useState('mas-vendidos')
   
    function cambiarCategoria(evento) {
     setCategoriaElegida(evento.target.value)
@@ -25,17 +26,87 @@ export default function Higiene() {
     setCategoriaElegida('todas')
     setMascotaElegida('todas')
     setPresentacionElegida('todas')
+    setOrdenElegido('mas-vendidos')
+  }
+
+  function cambiarOrden(evento) {
+    setOrdenElegido(evento.target.value)
+  }
+  function obtenerOrdenProducto(precio,posicionInicial ) {
+
+    if (ordenElegido === "precio-bajo") {
+      return precio *100 
+    }
+    if (ordenElegido === "precio-alto") {
+      return precio * -100 
+    }
+    return posicionInicial
   }
 
   function agregarShampoo() {
-  const producto = {
-    nombre: 'Shampoo Mimaskot',
-    precio: 24.90,
-    imagen: '/imagenes/higiene1.jpg'
+    const producto = {
+      nombre: 'Shampoo Mimaskot',
+      precio: 24.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
   }
 
-      carrito.agregar(producto)
-      carrito.abrir()
+  function agregarAcondicionador() {
+    const producto = {
+      nombre: 'Acondicionador',
+      precio: 22.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  function agregarLimpiezaDental() {
+    const producto = {
+      nombre: 'Limpieza dental',
+      precio: 18.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  function agregarToallitas() {
+    const producto = {
+      nombre: 'Toallitas húmedas',
+      precio: 16.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  function agregarPerfume() {
+    const producto = {
+      nombre: 'Perfume mascotas',
+      precio: 28.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  function agregarCepillo() {
+    const producto = {
+      nombre: 'Cepillo removedor',
+      precio: 19.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
   }
 
   return (
@@ -53,7 +124,7 @@ export default function Higiene() {
               </p>
             </div>
             <div className="ordenar-desplegable">
-              <select name="ordenar" id="ordenar">
+              <select name="ordenar" id="ordenar" value={ordenElegido} onChange={cambiarOrden}>
                 <option value="mas-vendidos">Ordenar por: Más vendidos</option>
                 <option value="precio-bajo">Precio: menor a mayor</option>
                 <option value="precio-alto">Precio: mayor a menor</option>
@@ -137,7 +208,8 @@ export default function Higiene() {
            {(categoriaElegida === 'todas' || categoriaElegida === 'shampoo') &&
             (mascotaElegida === 'todas' || mascotaElegida === 'gatos') &&
             (presentacionElegida === 'todas' || presentacionElegida === 'pequena') && (
-            <div className="card-producto-item">
+
+            <div className="card-producto-item" style={{order: obtenerOrdenProducto(24.90,1)}}>
               <div className="imagen-producto-item">
                 <img src="/imagenes/higiene1.jpg" alt="Shampoo Mimaskot" />
               </div>
@@ -164,7 +236,7 @@ export default function Higiene() {
            {(categoriaElegida === 'todas' || categoriaElegida === 'acondicionador') &&
             (mascotaElegida === 'todas' || mascotaElegida === 'gatos') &&
             (presentacionElegida === 'todas' || presentacionElegida === 'pequena') && (
-            <div className="card-producto-item">
+            <div className="card-producto-item" style={{ order: obtenerOrdenProducto(22.90, 2) }}>
               <div className="imagen-producto-item">
                 <img src="/imagenes/higiene1.jpg" alt="Acondicionador" />
               </div>
@@ -180,7 +252,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarAcondicionador}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
@@ -191,7 +263,7 @@ export default function Higiene() {
             {(categoriaElegida === 'todas' || categoriaElegida === 'dental') &&
              (mascotaElegida === 'todas' || mascotaElegida === 'gatos') &&
              (presentacionElegida === 'todas' || presentacionElegida === 'mediana') && (
-            <div className="card-producto-item">
+            <div className="card-producto-item" style={{ order: obtenerOrdenProducto(18.90, 3) }}>
               <div className="imagen-producto-item">
                 <img src="/imagenes/higiene1.jpg" alt="Limpieza dental" />
               </div>
@@ -207,7 +279,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarLimpiezaDental}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
@@ -218,7 +290,7 @@ export default function Higiene() {
             {(categoriaElegida === 'todas' || categoriaElegida === 'toallitas') &&
              (mascotaElegida === 'todas' || mascotaElegida === 'perros') &&
              (presentacionElegida === 'todas' || presentacionElegida === 'mediana') && (
-            <div className="card-producto-item">
+            <div className="card-producto-item" style={{ order: obtenerOrdenProducto(16.90, 4) }}>
               <div className="imagen-producto-item">
                 <img src="/imagenes/higiene1.jpg" alt="Toallitas húmedas" />
               </div>
@@ -234,7 +306,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarToallitas}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
@@ -245,7 +317,7 @@ export default function Higiene() {
             {(categoriaElegida === 'todas' || categoriaElegida === 'perfumes') &&
              (mascotaElegida === 'todas' || mascotaElegida === 'perros') &&
              (presentacionElegida === 'todas' || presentacionElegida === 'grande') && (
-            <div className="card-producto-item">
+            <div className="card-producto-item" style={{ order: obtenerOrdenProducto(28.90, 5) }}>
               <div className="imagen-producto-item">
                 <img src="/imagenes/higiene1.jpg" alt="Perfume mascotas" />
               </div>
@@ -261,7 +333,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarPerfume}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
@@ -272,7 +344,7 @@ export default function Higiene() {
             {(categoriaElegida === 'todas' || categoriaElegida === 'cepillos') &&
              (mascotaElegida === 'todas' || mascotaElegida === 'perros') &&
              (presentacionElegida === 'todas' || presentacionElegida === 'grande') && (
-            <div className="card-producto-item">
+            <div className="card-producto-item" style={{ order: obtenerOrdenProducto(19.90, 6) }}>
               <div className="imagen-producto-item">
                 <img src="/imagenes/higiene1.jpg" alt="Cepillo removedor" />
               </div>
@@ -288,7 +360,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarCepillo}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>

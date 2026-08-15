@@ -1093,76 +1093,202 @@ body {
 
 .panel-carrito {
     position: fixed;
-    top: 0;
-    right: -420px;
-
-    width: 380px;
-    height: 100vh;
-
+    top: 90px;
+    right: -390px;
+    width: 360px;
+    height: auto;
+    max-height: calc(100vh - 110px);
+    box-sizing: border-box;
     background: white;
     box-shadow: -4px 0 15px rgba(0,0,0,.15);
-
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
     z-index: 9999;
-    padding: 20px;
-
+    padding: 0;
     transition: .3s;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .panel-carrito.activo {
-    right: 0;
+    right: 16px;
 }
 
 .carrito-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.carrito-header h2 {
+    margin: 0 0 4px;
+    font-size: 25px;
+}
+
+.carrito-header p {
+    margin: 0;
+    color: #777777;
+    font-size: 13px;
 }
 
 .carrito-header button {
     border: none;
     background: none;
-    font-size: 30px;
+    font-size: 26px;
     cursor: pointer;
+}
+
+.envio-gratis-carrito {
+    padding: 14px 20px;
+    background: #edf8f0;
+}
+
+.texto-envio-carrito {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 9px;
+    color: #333333;
+    font-size: 12px;
+}
+
+.texto-envio-carrito strong {
+    color: #16853b;
+    white-space: nowrap;
+}
+
+.barra-envio-carrito {
+    height: 7px;
+    overflow: hidden;
+    background: #d7e8dc;
+    border-radius: 10px;
+}
+
+.barra-envio-carrito div {
+    height: 100%;
+    background: #16853b;
+    border-radius: 10px;
+    transition: width .3s;
+}
+
+.lista-carrito {
+    max-height: 42vh;
+    overflow-y: auto;
 }
 
 .item-carrito {
     display: grid;
-    grid-template-columns: 70px 1fr 30px;
-    align-items: center;
-    gap: 15px;
-
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
+    grid-template-columns: 64px 1fr 28px;
+    align-items: start;
+    gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .item-carrito img {
-    width: 70px;
-    height: 70px;
+    width: 64px;
+    height: 64px;
     object-fit: contain;
+    background: #f7f7f7;
+    border-radius: 10px;
+}
+
+.datos-producto-carrito h4 {
+    margin: 0 0 5px;
+    color: #333333;
+    font-size: 15px;
 }
 
 .item-carrito p {
+    margin: 0 0 8px;
     color: #16853b;
+    font-weight: bold;
+}
+
+.cantidad-producto-carrito {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.cantidad-producto-carrito button {
+    width: 28px;
+    height: 26px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.cantidad-producto-carrito span {
+    min-width: 24px;
+    text-align: center;
     font-weight: bold;
 }
 
 .eliminar-producto {
     border: none;
     background: none;
-    color: red;
-    font-size: 25px;
+    color: #d93025;
+    font-size: 18px;
     cursor: pointer;
 }
 
 .carrito-total {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
-
-    font-size: 20px;
+    padding: 16px 20px 8px;
+    font-size: 19px;
     font-weight: bold;
+}
+
+.carrito-total strong {
+    color: #16853b;
+}
+
+.nota-envio-carrito {
+    margin: 0;
+    padding: 0 20px 14px;
+    color: #777777;
+    font-size: 12px;
+}
+
+.btn-finalizar-compra,
+.btn-seguir-comprando {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 20px 10px;
+    padding: 11px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-finalizar-compra {
+    border: 1px solid #16853b;
+    background: #16853b;
+    color: white;
+}
+
+.btn-seguir-comprando {
+    margin-bottom: 18px;
+    border: 1px solid #16853b;
+    background: white;
+    color: #16853b;
+}
+
+@media (max-width: 420px) {
+    .panel-carrito {
+        top: 70px;
+        right: -110%;
+        width: calc(100% - 20px);
+        max-height: calc(100vh - 85px);
+    }
+
+    .panel-carrito.activo {
+        right: 10px;
+    }
 }
 
 .boton-icono {
