@@ -32,10 +32,37 @@ export function CarritoProvider(props) {
     setProductos(productosRestantes)
   }
 
+  function aumentarCantidad(indice) {
+    const productosActualizados = [...productos]
+    const cantidadActual = productosActualizados[indice].cantidad || 1
+
+    productosActualizados[indice] = {
+      ...productosActualizados[indice],
+      cantidad: cantidadActual + 1
+    }
+
+    setProductos(productosActualizados)
+  }
+
+  function disminuirCantidad(indice) {
+    const productosActualizados = [...productos]
+    const cantidadActual = productosActualizados[indice].cantidad || 1
+
+    if (cantidadActual > 1) {
+      productosActualizados[indice] = {
+        ...productosActualizados[indice],
+        cantidad: cantidadActual - 1
+      }
+
+      setProductos(productosActualizados)
+    }
+  }
+
   let total = 0
 
   for (let posicion = 0; posicion < productos.length; posicion++) {
-    total = total + productos[posicion].precio
+    const cantidad = productos[posicion].cantidad || 1
+    total = total + productos[posicion].precio * cantidad
   }
 
   const datosDelCarrito = {
@@ -45,6 +72,8 @@ export function CarritoProvider(props) {
     cerrar: cerrarCarrito,
     agregar: agregarProducto,
     eliminar: eliminarProducto,
+    aumentar: aumentarCantidad,
+    disminuir: disminuirCantidad,
     total: total
   }
 
