@@ -28,14 +28,69 @@ export default function Higiene() {
   }
 
   function agregarShampoo() {
-  const producto = {
-    nombre: 'Shampoo Mimaskot',
-    precio: 24.90,
-    imagen: '/imagenes/higiene1.jpg'
+    const producto = {
+      nombre: 'Shampoo Mimaskot',
+      precio: 24.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
   }
 
-      carrito.agregar(producto)
-      carrito.abrir()
+  function agregarAcondicionador() {
+    const producto = {
+      nombre: 'Acondicionador',
+      precio: 22.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  function agregarLimpiezaDental() {
+    const producto = {
+      nombre: 'Limpieza dental',
+      precio: 18.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  function agregarToallitas() {
+    const producto = {
+      nombre: 'Toallitas húmedas',
+      precio: 16.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  function agregarPerfume() {
+    const producto = {
+      nombre: 'Perfume mascotas',
+      precio: 28.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  function agregarCepillo() {
+    const producto = {
+      nombre: 'Cepillo removedor',
+      precio: 19.90,
+      imagen: '/imagenes/higiene1.jpg'
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
   }
 
   return (
@@ -180,7 +235,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarAcondicionador}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
@@ -207,7 +262,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarLimpiezaDental}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
@@ -234,7 +289,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarToallitas}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
@@ -261,7 +316,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarPerfume}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
@@ -288,7 +343,7 @@ export default function Higiene() {
                     <i className="bi bi-star-fill" />
                     <i className="bi bi-star-fill" />
                   </div>
-                  <button type="button" className="btn-agregar-carrito">
+                  <button type="button" className="btn-agregar-carrito" onClick={agregarCepillo}>
                     <i className="bi bi-cart-plus" />
                   </button>
                 </div>
