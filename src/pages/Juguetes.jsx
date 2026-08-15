@@ -1,184 +1,364 @@
-﻿export default function Juguetes() {
+﻿import { useState } from "react";
+import { useCarrito } from "../context/CarritoContext.jsx";
+
+const productos = [
+  {
+    nombre: "Mordedor de hueso",
+    precio: 25.90,
+    imagen: "/imagenes/Juguetes/MordedorDehueso.jpg",
+    mascota: "perros",
+    edad: "adulto",
+    tamaño: "grande",
+  },
+  {
+    nombre: "Mordedor Dental",
+    precio: 18.90,
+    imagen: "/imagenes/Juguetes/MordedorDental.png",
+    mascota: "perros",
+    edad: "adulto",
+    tamaño: "mediano",
+  },
+  {
+    nombre: "Mordedor de nylon",
+    precio: 30.90,
+    imagen: "/imagenes/Juguetes/MordedorNylon.png",
+    mascota: "perros",
+    edad: "adulto",
+    tamaño: "grande",
+  },
+  {
+    nombre: "Mordedor de Pollo",
+    precio: 27.90,
+    imagen: "/imagenes/Juguetes/MordedorPollo.jpg",
+    mascota: "perros",
+    edad: "cachorro",
+    tamaño: "mediano",
+  },
+  {
+    nombre: "Pelota de Goma",
+    precio: 22.90,
+    imagen: "/imagenes/Juguetes/PelotaGoma.png",
+    mascota: "perros",
+    edad: "cachorro",
+    tamaño: "pequeño",
+  },
+  {
+    nombre: "Pelota de tenis",
+    precio: 35.90,
+    imagen: "/imagenes/Juguetes/PelotaTenis.png",
+    mascota: "perros",
+    edad: "adulto",
+    tamaño: "mediano",
+  },
+  {
+    nombre: "Pelota de Sonido",
+    precio: 22.90,
+    imagen: "/imagenes/Juguetes/PelotaSonido.jpg",
+    mascota: "perros",
+    edad: "cachorro",
+    tamaño: "pequeño",
+  },
+  {
+    nombre: "Pelota Dispensadora",
+    precio: 45.90,
+    imagen: "/imagenes/Juguetes/PelotaDispensadora.webp",
+    mascota: "perros",
+    edad: "adulto",
+    tamaño: "grande",
+  },
+  {
+    nombre: "Peluche para perro forma de ositos",
+    precio: 22.90,
+    imagen: "/imagenes/Juguetes/PelucheParaperro.png",
+    mascota: "perros",
+    edad: "cachorro",
+    tamaño: "mediano",
+  },
+  {
+    nombre: "Peluche para perros forma de patito",
+    precio: 22.90,
+    imagen: "/imagenes/Juguetes/PeluchePerro.jpg",
+    mascota: "perros",
+    edad: "cachorro",
+    tamaño: "mediano",
+  },
+  {
+    nombre: "Peluche para perros forma de pollo a la brasa",
+    precio: 22.90,
+    imagen: "/imagenes/Juguetes/Peluchepollo.jpg",
+    mascota: "perros",
+    edad: "adulto",
+    tamaño: "grande",
+  },
+  {
+    nombre: "Peluche para perros forma de puercoespin",
+    precio: 45.90,
+    imagen: "/imagenes/Juguetes/PeluchePrros.png",
+    mascota: "perros",
+    edad: "adulto",
+    tamaño: "grande",
+  },
+  {
+    nombre: "Cuadrado para gatos",
+    precio: 22.90,
+    imagen: "/imagenes/Juguetes/CuadradoParaGatos.jpg",
+    mascota: "gatos",
+    edad: "adulto",
+    tamaño: "mediano",
+  },
+  {
+    nombre: "Ratón para gatos",
+    precio: 22.90,
+    imagen: "/imagenes/Juguetes/RatonParagatos.webp",
+    mascota: "gatos",
+    edad: "cachorro",
+    tamaño: "pequeño",
+  },
+  {
+    nombre: "Túnel para gatos",
+    precio: 22.90,
+    imagen: "/imagenes/Juguetes/TunelParaGato.jpg",
+    mascota: "gatos",
+    edad: "adulto",
+    tamaño: "grande",
+  },
+  {
+    nombre: "Varita juguete para gatos",
+    precio: 45.90,
+    imagen: "/imagenes/Juguetes/VaritaJugueteLoro.webp",
+    mascota: "gatos",
+    edad: "adulto",
+    tamaño: "mediano",
+  },
+];
+
+export default function Juguetes() {
+  const carrito = useCarrito();
+
+  const [busqueda, setBusqueda] = useState("");
+  const [mascotaElegida, setMascotaElegida] = useState("todas");
+  const [edadElegida, setEdadElegida] = useState("todas");
+  const [tamañoElegido, setTamañoElegido] = useState("todos");
+
+  function agregarAlCarrito(producto) {
+    carrito.agregar(producto);
+    carrito.abrir();
+  }
+
+  function limpiarFiltros() {
+    setBusqueda("");
+    setMascotaElegida("todas");
+    setEdadElegida("todas");
+    setTamañoElegido("todos");
+  }
+
+  const productosFiltrados = productos.filter((producto) => {
+    const coincideBusqueda = producto.nombre
+      .toLowerCase()
+      .includes(busqueda.toLowerCase());
+
+    const coincideMascota =
+      mascotaElegida === "todas" ||
+      producto.mascota === mascotaElegida;
+
+    const coincideEdad =
+      edadElegida === "todas" ||
+      producto.edad === edadElegida;
+
+    const coincideTamaño =
+      tamañoElegido === "todos" ||
+      producto.tamaño === tamañoElegido;
+
+    return (
+      coincideBusqueda &&
+      coincideMascota &&
+      coincideEdad &&
+      coincideTamaño
+    );
+  });
+
   return (
-<div className="pagina-juguetes">
-  <main>
-    <section className="banner">
-      <img src="/imagenes/perritos.jpg" alt="Perritos jugando" />
-    </section>
-    <section className="catalogo">
-      <aside className="filtros">
-        <h2>Filtrar juguetes</h2>
-        <h3>Mascota</h3>
-        <label>
-          <input type="checkbox" />
-          Perros
-        </label>
-        <label>
-          <input type="checkbox" />
-          Gatos
-        </label>
-        <h3>Edad</h3>
-        <label>
-          <input type="checkbox" />
-          Cachorro
-        </label>
-        <label>
-          <input type="checkbox" />
-          Adulto
-        </label>
-        <h3>Tamaño</h3>
-        <label>
-          <input type="checkbox" />
-          Pequeño
-        </label>
-        <label>
-          <input type="checkbox" />
-          Mediano
-        </label>
-        <label>
-          <input type="checkbox" />
-          Grande
-        </label>
-      </aside>
-      <section className="productos">
-        <div className="buscador">
-          <input type="text" id="buscadorJuguetes" placeholder="Buscar juguete..." />
-          <i className="bi bi-search" />
-        </div>
-        <div id="mensajeCarrito" className="mensaje-carrito">
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/MordedorDehueso.jpg" alt="Mordedor de hueso" />
-          <h3>Mordedor de hueso</h3>
-          <p>S/ 25.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/MordedorDental.png" alt="Mordedor Dental" />
-          <h3>Mordedor Dental</h3>
-          <p>S/ 18.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/MordedorNylon.png" alt="Mordedor de Nylon" />
-          <h3>Mordedor de nylon</h3>
-          <p>S/ 30.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/MordedorPollo.jpg" alt="Mordedor de pollo" />
-          <h3>Mordedor de Pollo</h3>
-          <p>S/ 27.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/PelotaGoma.png" alt="Pelota de Goma" />
-          <h3>Pelota de Goma</h3>
-          <p>S/ 22.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/PelotaTenis.png" alt="Pelota de Tenis" />
-          <h3>Pelota de tenis</h3>
-          <p>S/ 35.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/PelotaSonido.jpg" alt="Pelota de Sonido" />
-          <h3>Pelota de Sonido</h3>
-          <p>S/ 22.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/PelotaDispensadora.webp" alt="Pelota Dispensadora" />
-          <h3>Pelota Dispensadora</h3>
-          <p>S/ 45.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/PelucheParaperro.png" alt="Peluche para perro" />
-          <h3>Peluche para perro forma de ositos</h3>
-          <p>S/ 22.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/PeluchePerro.jpg" alt="Peluche para perros" />
-          <h3>Peluche para perros forma de patito</h3>
-          <p>S/ 22.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/Peluchepollo.jpg" alt="Peluche para perros forma de pollo" />
-          <h3>Peluche para perros forma de pollo a la brasa</h3>
-          <p>S/ 22.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/PeluchePrros.png" alt="Peluche para perros" />
-          <h3>Peluche para perros forma de puercoespin</h3>
-          <p>S/ 45.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/CuadradoParaGatos.jpg" alt="Cuadrado para gatos" />
-          <h3>Cuadrado para gatos</h3>
-          <p>S/ 22.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/RatonParagatos.webp" alt="Ratón para gatos" />
-          <h3>Ratón para gatos</h3>
-          <p>S/ 22.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/TunelParaGato.jpg" alt="Túnel para gatos" />
-          <h3>Túnel para gatos</h3>
-          <p>S/ 22.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-        <div className="producto">
-          <img src="/imagenes/Juguetes/VaritaJugueteLoro.webp" alt="Varita juguete para loros" />
-          <h3>Varita juguete para loros</h3>
-          <p>S/ 45.90</p>
-          <button>
-            Agregar al carrito
-          </button>
-        </div>
-      </section>
-    </section>
-  </main>
-</div>
-  )
+    <div className="pagina-juguetes">
+      <main>
+
+        <section className="banner">
+          <img
+            src="/imagenes/peroygatomascota.png"
+            alt="Perritos jugando"
+          />
+        </section>
+
+        <section className="catalogo">
+
+          <aside className="filtros">
+            <h2>Filtrar juguetes</h2>
+
+            <h3>Mascota</h3>
+
+            <label>
+              <input
+                type="radio"
+                name="mascota"
+                checked={mascotaElegida === "todas"}
+                onChange={() => setMascotaElegida("todas")}
+              />
+              Todas
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="mascota"
+                checked={mascotaElegida === "perros"}
+                onChange={() => setMascotaElegida("perros")}
+              />
+              Perros
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="mascota"
+                checked={mascotaElegida === "gatos"}
+                onChange={() => setMascotaElegida("gatos")}
+              />
+              Gatos
+            </label>
+            <h3>Edad</h3>
+
+            <label>
+              <input
+                type="radio"
+                name="edad"
+                checked={edadElegida === "todas"}
+                onChange={() => setEdadElegida("todas")}
+              />
+              Todas
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="edad"
+                checked={edadElegida === "cachorro"}
+                onChange={() => setEdadElegida("cachorro")}
+              />
+              Cachorro
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="edad"
+                checked={edadElegida === "adulto"}
+                onChange={() => setEdadElegida("adulto")}
+              />
+              Adulto
+            </label>
+
+            <h3>Tamaño</h3>
+
+            <label>
+              <input
+                type="radio"
+                name="tamaño"
+                checked={tamañoElegido === "todos"}
+                onChange={() => setTamañoElegido("todos")}
+              />
+              Todos
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="tamaño"
+                checked={tamañoElegido === "pequeño"}
+                onChange={() => setTamañoElegido("pequeño")}
+              />
+              Pequeño
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="tamaño"
+                checked={tamañoElegido === "mediano"}
+                onChange={() => setTamañoElegido("mediano")}
+              />
+              Mediano
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="tamaño"
+                checked={tamañoElegido === "grande"}
+                onChange={() => setTamañoElegido("grande")}
+              />
+              Grande
+            </label>
+
+            <button
+              type="button"
+              onClick={limpiarFiltros}
+            >
+              Limpiar filtros
+            </button>
+          </aside>
+
+          <section className="productos">
+
+            <div className="buscador">
+              <input
+                type="text"
+                id="buscadorJuguetes"
+                placeholder="Buscar juguete..."
+                value={busqueda}
+                onChange={(evento) =>
+                  setBusqueda(evento.target.value)
+                }
+              />
+
+              <i className="bi bi-search" />
+            </div>
+
+            {productosFiltrados.length === 0 ? (
+              <p>No se encontraron juguetes.</p>
+            ) : (
+              productosFiltrados.map((producto) => (
+                <div
+                  className="producto"
+                  key={producto.nombre}
+                >
+                  <img
+                    src={producto.imagen}
+                    alt={producto.nombre}
+                  />
+
+                  <h3>{producto.nombre}</h3>
+
+                  <p>
+                    S/ {producto.precio.toFixed(2)}
+                  </p>
+
+                  <button
+                    type="button"
+                    onClick={() =>
+                      agregarAlCarrito(producto)
+                    }
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              ))
+            )}
+
+          </section>
+
+        </section>
+
+      </main>
+    </div>
+  );
 }
 
