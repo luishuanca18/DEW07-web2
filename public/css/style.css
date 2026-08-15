@@ -29,15 +29,34 @@ body {
 }
 .contenedor-topBar {
   display: flex;
-  justify-content: space-between;
+  flex: 1;
+  justify-content: flex-start;
   align-items: center;
-  gap: 400px;
+  gap: 300px;
+ 
+
+}
+
+.topBar {
+  min-height: 46px;
+  padding: 8px 4%;
+}
+
+.topBar p {
+  margin: 0;
+}
+
+.lado1,
+.lado2,
+.lado3,
+.lado4 {
+  white-space: nowrap;
 }
 .lado4 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 30px;
+  gap: 18px;
 }
 .lado4 i {
   color: var(--color-white);
@@ -1144,6 +1163,20 @@ body {
 
     font-size: 20px;
     font-weight: bold;
+}
+
+.boton-icono {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+}
+
+.carrito-vacio {
+    padding: 32px 0;
+    text-align: center;
+    color: #666;
 }
 
 

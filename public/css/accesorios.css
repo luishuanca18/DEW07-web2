@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 400px;
+  gap: 40px;
 }
 .lado4 {
   display: flex;
@@ -599,4 +599,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
