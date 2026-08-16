@@ -3,7 +3,31 @@ import { useState } from "react";
 import { useCarrito } from "../context/CarritoContext.jsx";
 
 export default function Comida() {
-  const { agregarAlCarrito } = useCarrito();
+  const carrito = useCarrito()
+
+
+    function agregarDogxtreme() {
+    const producto = {
+      nombre: "Dogxtreme Adulto Cordero",
+      precio: 169.90,
+      imagen: "/imagenes/Comida/Comida1.jpg"
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
+
+  
+  function agregarDogxtreme() {
+    const producto = {
+      nombre: "Dogxtreme Adulto Cordero",
+      precio: 169.90,
+      imagen: "/imagenes/Comida/Comida1.jpg"
+    }
+
+    carrito.agregar(producto)
+    carrito.abrir()
+  }
 
   return (
 <div className="pagina-comida">
@@ -61,12 +85,7 @@ export default function Comida() {
         <h3>Dogxtreme Adulto Cordero</h3>
         <p>Para perros adultos de todas las razas</p>
         <h2>S/ 169.90</h2>
-        <button className="btn-comprar" onClick={() => agregarAlCarrito({
-          id: 1,
-          nombre: "Dogxtreme Adulto Cordero",
-          precio: 169.90,
-          imagen: "/imagenes/Comida/Comida1.jpg"
-        })}>Comprar</button>
+        <button className="btn-comprar" onClick={agregarDogxtreme}>Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="proplan" data-tipo="seco">
         <img src="/imagenes/Comida/Comida2.jpg" alt="Comida2" />
@@ -74,12 +93,7 @@ export default function Comida() {
         <h3>Pro plan Piel Sensible Adulto</h3>
         <p>Equilibrio metabólico, salud digestiva y protección corporal</p>
         <h2>S/ 359.90</h2>
-        <button className="btn-comprar" onClick={() => agregarAlCarrito({
-          id: 2,
-          nombre: "Pro plan Piel Sensible Adulto",
-          precio: 359.90,
-          imagen: "/imagenes/Comida/Comida2.jpg"
-        })} >Comprar</button>
+        <button className="btn-comprar">Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="salvaje" data-tipo="seco">
         <img src="/imagenes/Comida/Comida3.jpg" alt="Comida3" />
