@@ -47,7 +47,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Shampoo Mimaskot',
       precio: 24.90,
-      imagen: '/imagenes/higiene1.jpg'
+      imagen: '/imagenes/shampo-perro.webp'
     }
 
     carrito.agregar(producto)
@@ -58,7 +58,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Acondicionador',
       precio: 22.90,
-      imagen: '/imagenes/higiene1.jpg'
+      imagen: '/imagenes/acondicionador-perro.jpg'
     }
 
     carrito.agregar(producto)
@@ -69,7 +69,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Limpieza dental',
       precio: 18.90,
-      imagen: '/imagenes/higiene1.jpg'
+      imagen: '/imagenes/limpieza-dental.webp'
     }
 
     carrito.agregar(producto)
@@ -80,7 +80,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Toallitas húmedas',
       precio: 16.90,
-      imagen: '/imagenes/higiene1.jpg'
+      imagen: '/imagenes/toallas-higienicas.jpg'
     }
 
     carrito.agregar(producto)
@@ -91,7 +91,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Perfume mascotas',
       precio: 28.90,
-      imagen: '/imagenes/higiene1.jpg'
+      imagen: '/imagenes/perfume.jpg'
     }
 
     carrito.agregar(producto)
@@ -102,7 +102,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Cepillo removedor',
       precio: 19.90,
-      imagen: '/imagenes/higiene1.jpg'
+      imagen: '/imagenes/cepillo.png'
     }
 
     carrito.agregar(producto)
@@ -211,7 +211,7 @@ export default function Higiene() {
 
             <div className="card-producto-item" style={{order: obtenerOrdenProducto(24.90,1)}}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/higiene1.jpg" alt="Shampoo Mimaskot" />
+                <img src="/imagenes/shampo-perro.webp" alt="Shampoo Mimaskot" />
               </div>
               <div className="info-producto-item">
                 <h3>Shampoo Mimaskot</h3>
@@ -238,7 +238,7 @@ export default function Higiene() {
             (presentacionElegida === 'todas' || presentacionElegida === 'pequena') && (
             <div className="card-producto-item" style={{ order: obtenerOrdenProducto(22.90, 2) }}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/higiene1.jpg" alt="Acondicionador" />
+                <img src="/imagenes/acondicionador-perro.jpg" alt="Acondicionador" />
               </div>
               <div className="info-producto-item">
                 <h3>Acondicionador</h3>
@@ -265,7 +265,7 @@ export default function Higiene() {
              (presentacionElegida === 'todas' || presentacionElegida === 'mediana') && (
             <div className="card-producto-item" style={{ order: obtenerOrdenProducto(18.90, 3) }}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/higiene1.jpg" alt="Limpieza dental" />
+                <img src="/imagenes/limpieza-dental.webp" alt="Limpieza dental" />
               </div>
               <div className="info-producto-item">
                 <h3>Limpieza dental</h3>
@@ -292,7 +292,7 @@ export default function Higiene() {
              (presentacionElegida === 'todas' || presentacionElegida === 'mediana') && (
             <div className="card-producto-item" style={{ order: obtenerOrdenProducto(16.90, 4) }}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/higiene1.jpg" alt="Toallitas húmedas" />
+                <img src="/imagenes/toallas-higienicas.jpg" alt="Toallitas húmedas" />
               </div>
               <div className="info-producto-item">
                 <h3>Toallitas húmedas</h3>
@@ -319,7 +319,7 @@ export default function Higiene() {
              (presentacionElegida === 'todas' || presentacionElegida === 'grande') && (
             <div className="card-producto-item" style={{ order: obtenerOrdenProducto(28.90, 5) }}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/higiene1.jpg" alt="Perfume mascotas" />
+                <img src="imagenes/perfume.jpg" alt="Perfume mascotas" />
               </div>
               <div className="info-producto-item">
                 <h3>Perfume mascotas</h3>
@@ -346,7 +346,7 @@ export default function Higiene() {
              (presentacionElegida === 'todas' || presentacionElegida === 'grande') && (
             <div className="card-producto-item" style={{ order: obtenerOrdenProducto(19.90, 6) }}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/higiene1.jpg" alt="Cepillo removedor" />
+                <img src="imagenes/cepillo.png" alt="Cepillo removedor" />
               </div>
               <div className="info-producto-item">
                 <h3>Cepillo removedor</h3>
