@@ -38,7 +38,7 @@ export default function Higiene() {
       return precio *100 
     }
     if (ordenElegido === "precio-alto") {
-      return precio * -100 
+      return precio * -100
     }
     return posicionInicial
   }
