@@ -1,4 +1,10 @@
-﻿export default function Comida() {
+﻿import FiltrosCatalogo from "../components/FiltrosCatalogo";
+import { useState } from "react";
+import { useCarrito } from "../context/CarritoContext.jsx";
+
+export default function Comida() {
+  const { agregarAlCarrito } = useCarrito();
+
   return (
 <div className="pagina-comida">
   <div id="carouselExampleIndicators" className="carousel slide">
@@ -55,7 +61,12 @@
         <h3>Dogxtreme Adulto Cordero</h3>
         <p>Para perros adultos de todas las razas</p>
         <h2>S/ 169.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 1,
+          nombre: "Dogxtreme Adulto Cordero",
+          precio: 169.90,
+          imagen: "/imagenes/Comida/Comida1.jpg"
+        })}>Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="proplan" data-tipo="seco">
         <img src="/imagenes/Comida/Comida2.jpg" alt="Comida2" />
@@ -63,7 +74,12 @@
         <h3>Pro plan Piel Sensible Adulto</h3>
         <p>Equilibrio metabólico, salud digestiva y protección corporal</p>
         <h2>S/ 359.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 2,
+          nombre: "Pro plan Piel Sensible Adulto",
+          precio: 359.90,
+          imagen: "/imagenes/Comida/Comida2.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="salvaje" data-tipo="seco">
         <img src="/imagenes/Comida/Comida3.jpg" alt="Comida3" />
@@ -71,7 +87,12 @@
         <h3>Salvaje Adulto Con Pollo</h3>
         <p>Alimentación Completa y Vitalidad</p>
         <h2>S/ 164.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 3,
+          nombre: "Salvaje Adulto Con Pollo",
+          precio: 164.90,
+          imagen: "/imagenes/Comida/Comida3.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="miocane" data-tipo="seco">
         <img src="/imagenes/Comida/Comida4.jpg" alt="Comida4" />
@@ -79,7 +100,12 @@
         <h3>Mio Cane Premium Adulto 15 kg</h3>
         <p>Nutricional completa, sabrosa y balanceada</p>
         <h2>S/ 171.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 4,
+          nombre: "Mio Cane Premium Adulto 15 kg",
+          precio: 171.90,
+          imagen: "/imagenes/Comida/Comida4.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="royalcanin" data-tipo="seco">
         <img src="/imagenes/Comida/Comida6.jpg" alt="Comida6" />
@@ -87,7 +113,12 @@
         <h3>Royal Canin Gato Fhn Kitten 2 Kg</h3>
         <p>Nutrición Clínica y Precisión Veterinario</p>
         <h2>S/ 143.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 6,
+          nombre: "Royal Canin Gato Fhn Kitten 2 Kg",
+          precio: 143.90,
+          imagen: "/imagenes/Comida/Comida6.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="hills" data-tipo="seco">
         <img src="/imagenes/Comida/Comida7.jpg" alt="Comida7" />
@@ -95,7 +126,12 @@
         <h3>Hills SD Mature 7 Lb Adulto + 7 Años 3.17 Kg</h3>
         <p>Nutrición balanceada</p>
         <h2>S/ 187.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 7,
+          nombre: "Hills SD Mature 7 Lb Adulto + 7 Años 3.17 Kg",
+          precio: 187.90,
+          imagen: "/imagenes/Comida/Comida7.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="catxtreme" data-tipo="seco">
         <img src="/imagenes/Comida/Comida8.jpg" alt="Comida8" />
@@ -103,7 +139,12 @@
         <h3>Catxtreme Adulto Esterilizado Pollo 2.5 Kg</h3>
         <p>Aportan proteínas, vitaminas y minerales</p>
         <h2>S/ 62.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 8,
+          nombre: "Catxtreme Adulto Esterilizado Pollo 2.5 Kg",
+          precio: 62.90,
+          imagen: "/imagenes/Comida/Comida8.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="catchow" data-tipo="seco">
         <img src="/imagenes/Comida/Comida9.jpg" alt="Comida9" />
@@ -111,7 +152,12 @@
         <h3>Cat Chow Esterilizado Defense Plus 3kg</h3>
         <p>Garantiza una excelente palatabilidad</p>
         <h2>S/ 57.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 9,
+          nombre: "Cat Chow Esterilizado Defense Plus 3kg",
+          precio: 57.90,
+          imagen: "/imagenes/Comida/Comida9.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="ricocan" data-tipo="humedo">
         <img src="/imagenes/Comida/Humedo1.jpg" alt="Humedo1" />
@@ -119,7 +165,12 @@
         <h3>Ricocan Adulto Paté de Cordero 312 g</h3>
         <p>Alimento húmedo premium</p>
         <h2>S/ 5.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 10,
+          nombre: "Ricocan Adulto Paté de Cordero 312 g",
+          precio: 5.90,
+          imagen: "/imagenes/Comida/Humedo1.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="ricocan" data-tipo="humedo">
         <img src="/imagenes/Comida/Humedo2.jpg" alt="Humedo2" />
@@ -127,7 +178,12 @@
         <h3>Ricocan Adulto Paté de Pollo 330 g</h3>
         <p>Alimento húmedo premium</p>
         <h2>S/ 5.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 11,
+          nombre: "Ricocan Adulto Paté de Pollo 330 g",
+          precio: 5.90,
+          imagen: "/imagenes/Comida/Humedo2.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="canbo" data-tipo="humedo">
         <img src="/imagenes/Comida/Humedo3.jpg" alt="Humedo3" />
@@ -135,7 +191,12 @@
         <h3>Canbo Enlatado Hipoalergenico 330 g</h3>
         <p>Fortalecimiento de la barrera cutánea</p>
         <h2>S/ 14.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 12,
+          nombre: "Canbo Enlatado Hipoalergenico 330 g",
+          precio: 14.90,
+          imagen: "/imagenes/Comida/Humedo3.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="canbo" data-tipo="humedo">
         <img src="/imagenes/Comida/Humedo4.jpg" alt="Humedo4" />
@@ -143,7 +204,12 @@
         <h3>Canbo Dog Paté Flexibilidad y Movilidad 330g</h3>
         <p>Promueven la salud articular</p>
         <h2>S/ 12.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 13,
+          nombre: "Canbo Dog Paté Flexibilidad y Movilidad 330g",
+          precio: 12.90,
+          imagen: "/imagenes/Comida/Humedo4.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="fancy" data-tipo="humedo">
         <img src="/imagenes/Comida/Humedo5.jpg" alt="Humedo5" />
@@ -151,7 +217,12 @@
         <h3>Fancy Feast Al Horno Con Salmon En Salsa Y Otros 85 g</h3>
         <p>Alimentación Completa y Vitalidad</p>
         <h2>S/ 7.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 14,
+          nombre: "Fancy Feast Al Horno Con Salmon En Salsa Y Otros 85 g",
+          precio: 7.90,
+          imagen: "/imagenes/Comida/Humedo5.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="ricocat" data-tipo="humedo">
         <img src="/imagenes/Comida/Humedo6.jpg" alt="Humedo6" />
@@ -159,7 +230,12 @@
         <h3>Ricocat Adulto Paté Sardina Pollo 330 g</h3>
         <p>Garantiza una excelente palatabilidad</p>
         <h2>S/ 6.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 15,
+          nombre: "Ricocat Adulto Paté Sardina Pollo 330 g",
+          precio: 6.90,
+          imagen: "/imagenes/Comida/Humedo6.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="applaws" data-tipo="humedo">
         <img src="/imagenes/Comida/Humedo7.jpg" alt="Humedo7" />
@@ -167,7 +243,12 @@
         <h3>Applaws Filete De Atun Con Camaron X 70 Gr</h3>
         <p>Una propuesta nutricional completa</p>
         <h2>S/ 8.80</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 16,
+          nombre: "Applaws Filete De Atun Con Camaron X 70 Gr",
+          precio: 8.80,
+          imagen: "/imagenes/Comida/Humedo7.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="parpets" data-tipo="humedo">
         <img src="/imagenes/Comida/Humedo8.jpg" alt="Humedo8" />
@@ -175,7 +256,12 @@
         <h3>Par Pets gato paté de pescado 160g</h3>
         <p>Fortalece el pelaje y brinda la energía activa</p>
         <h2>S/ 9.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 17,
+          nombre: "Par Pets gato paté de pescado 160g",
+          precio: 9.90,
+          imagen: "/imagenes/Comida/Humedo8.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="snout" data-tipo="snacks">
         <img src="/imagenes/Comida/Snack1.jpg" alt="Snack1" />
@@ -183,7 +269,12 @@
         <h3>Snout Hueso Deshidratado Minibone Ahumado De Cerdo</h3>
         <p>Sabrosa y balanceada</p>
         <h2>S/ 16.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 18,
+          nombre: "Snout Hueso Deshidratado Minibone Ahumado De Cerdo",
+          precio: 16.90,
+          imagen: "/imagenes/Comida/Snack1.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="wanpy" data-tipo="snacks">
         <img src="/imagenes/Comida/Snack2.jpg" alt="Snack2" />
@@ -191,7 +282,12 @@
         <h3>Soft Duck Jerky Strips</h3>
         <p>Elaborado con ingredientes seleccionados</p>
         <h2>S/ 19.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 19,
+          nombre: "Soft Duck Jerky Strips",
+          precio: 19.90,
+          imagen: "/imagenes/Comida/Snack2.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="naturalistic" data-tipo="snacks">
         <img src="/imagenes/Comida/Snack3.jpg" alt="Snack3" />
@@ -199,7 +295,12 @@
         <h3>Naturalistic Tiras De Cordero 100 g</h3>
         <p>Protege la salud digestiva</p>
         <h2>S/ 13.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 20,
+          nombre: "Naturalistic Tiras De Cordero 100 g",
+          precio: 13.90,
+          imagen: "/imagenes/Comida/Snack3.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="perros" data-marca="mimma" data-tipo="snacks">
         <img src="/imagenes/Comida/Snack4.jpg" alt="Snack4" />
@@ -207,7 +308,12 @@
         <h3>Carnitas Tradicional 30g</h3>
         <p>Formulación perfectamente adaptada</p>
         <h2>S/ 5.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 21,
+          nombre: "Carnitas Tradicional 30g",
+          precio: 5.90,
+          imagen: "/imagenes/Comida/Snack4.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="churu" data-tipo="snacks">
         <img src="/imagenes/Comida/Snack5.jpg" alt="Snack5" />
@@ -215,7 +321,12 @@
         <h3>Churu Sabor Pollo con Camarón 60Gr</h3>
         <p>Mayor hidratación</p>
         <h2>S/ 12.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 22,
+          nombre: "Churu Sabor Pollo con Camarón 60Gr",
+          precio: 12.90,
+          imagen: "/imagenes/Comida/Snack5.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="dentalife" data-tipo="snacks">
         <img src="/imagenes/Comida/Snack6.jpg" alt="Snack6" />
@@ -223,7 +334,12 @@
         <h3>Dentalife Gatos 40g Xl</h3>
         <p>Cuidado focalizado en dental</p>
         <h2>S/ 9.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 23,
+          nombre: "Dentalife Gatos 40g Xl",
+          precio: 9.90,
+          imagen: "/imagenes/Comida/Snack6.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="rambala" data-tipo="snacks">
         <img src="/imagenes/Comida/Snack7.jpg" alt="Snack7" />
@@ -231,7 +347,12 @@
         <h3>Rambala Bites Tarta De Pescado 100 g</h3>
         <p>Alimentación Completa y Vitalidad</p>
         <h2>S/ 16.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 24,
+          nombre: "Rambala Bites Tarta De Pescado 100 g",
+          precio: 16.90,
+          imagen: "/imagenes/Comida/Snack7.jpg"
+        })} >Comprar</button>
       </div>
       <div className="card" data-mascota="gatos" data-marca="gnawlers" data-tipo="snacks">
         <img src="/imagenes/Comida/Snack8.jpg" alt="Snack8" />
@@ -239,7 +360,12 @@
         <h3>Gnawlers Lick'N'Likable Yogurt &amp; Arándanos 100Gr</h3>
         <p>Una manera saludable de consentir a tu gato</p>
         <h2>S/ 13.90</h2>
-        <button className="btn-comprar">Comprar</button>
+        <button className="btn-comprar" onClick={() => agregarAlCarrito({
+          id: 25,
+          nombre: "Gnawlers Lick'N'Likable Yogurt & Arándanos 100Gr",
+          precio: 13.90,
+          imagen: "/imagenes/Comida/Snack8.jpg"
+        })} >Comprar</button>
       </div>
     </section>
   </section>
