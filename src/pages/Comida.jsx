@@ -40,7 +40,7 @@ export default function Comida() {
     const producto = {
       nombre: "Dogxtreme Adulto Cordero",
       precio: 169.90,
-      imagen: "/imagenes/Comida/Comida1.jpg"
+      imagen: "./imagenes/Comida/Comida1.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -50,7 +50,7 @@ export default function Comida() {
     const producto = {
       nombre: "Pro Plan Piel Sensible Adulto",
       precio: 359.90,
-      imagen: "/imagenes/Comida/Comida2.jpg"
+      imagen: "./imagenes/Comida/Comida2.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -60,7 +60,7 @@ export default function Comida() {
     const producto = {
       nombre: "Salvaje Adulto Con Pollo",
       precio: 164.90,
-      imagen: "/imagenes/Comida/Comida3.jpg"
+      imagen: "./imagenes/Comida/Comida3.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -70,7 +70,7 @@ export default function Comida() {
     const producto = {
       nombre: "Mio Cane Premium Adulto 15 kg",
       precio: 171.90,
-      imagen: "/imagenes/Comida/Comida4.jpg"
+      imagen: "./imagenes/Comida/Comida4.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -80,7 +80,7 @@ export default function Comida() {
     const producto = {
       nombre: "Royal Canin Gato Fhn Kitten 2 Kg",
       precio: 143.90,
-      imagen: "/imagenes/Comida/Comida6.jpg"
+      imagen: "./imagenes/Comida/Comida6.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -90,7 +90,7 @@ export default function Comida() {
     const producto = {
       nombre: "Hills SD Mature 7 Lb Adulto + 7 Años 3.17 Kg",
       precio: 187.90,
-      imagen: "/imagenes/Comida/Comida7.jpg"
+      imagen: "./imagenes/Comida/Comida7.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -100,7 +100,7 @@ export default function Comida() {
     const producto = {
       nombre: "Catxtreme Adulto Esterilizado Pollo 2.5 Kg",
       precio: 62.90,
-      imagen: "/imagenes/Comida/Comida8.jpg"
+      imagen: "./imagenes/Comida/Comida8.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -110,7 +110,7 @@ export default function Comida() {
     const producto = {
       nombre: "Cat Chow Esterilizado Defense Plus 3kg",
       precio: 57.90,
-      imagen: "/imagenes/Comida/Comida9.jpg"
+      imagen: "./imagenes/Comida/Comida9.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -120,7 +120,7 @@ export default function Comida() {
     const producto = {
       nombre: "Ricocan Adulto Paté de Cordero 312 g",
       precio: 5.90,
-      imagen: "/imagenes/Comida/Humedo1.jpg"
+      imagen: "./imagenes/Comida/Humedo1.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -130,7 +130,7 @@ export default function Comida() {
     const producto = {
       nombre: "Ricocan Adulto Paté de Pollo 330 g",
       precio: 5.90,
-      imagen: "/imagenes/Comida/Humedo2.jpg"
+      imagen: "./imagenes/Comida/Humedo2.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -140,7 +140,7 @@ export default function Comida() {
     const producto = {
       nombre: "Canbo Enlatado Hipoalergenico 330 g",
       precio: 14.90,
-      imagen: "/imagenes/Comida/Humedo3.jpg"
+      imagen: "./imagenes/Comida/Humedo3.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -150,7 +150,7 @@ export default function Comida() {
     const producto = {
       nombre: "Canbo Dog Paté Flexibilidad y Movilidad 330g",
       precio: 12.90,
-      imagen: "/imagenes/Comida/Humedo4.jpg"
+      imagen: "./imagenes/Comida/Humedo4.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -160,7 +160,7 @@ export default function Comida() {
     const producto = {
       nombre: "Fancy Feast Al Horno Con Salmon En Salsa Y Otros 85 g",
       precio: 7.90,
-      imagen: "/imagenes/Comida/Humedo5.jpg"
+      imagen: "./imagenes/Comida/Humedo5.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -170,7 +170,7 @@ export default function Comida() {
     const producto = {
       nombre: "Ricocat Adulto Paté Sardina Pollo 330 g",
       precio: 6.90,
-      imagen: "/imagenes/Comida/Humedo6.jpg"
+      imagen: "./imagenes/Comida/Humedo6.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -180,7 +180,7 @@ export default function Comida() {
     const producto = {
       nombre: "Applaws Filete De Atun Con Camaron X 70 Gr",
       precio: 8.80,
-      imagen: "/imagenes/Comida/Humedo7.jpg"
+      imagen: "./imagenes/Comida/Humedo7.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -190,7 +190,7 @@ export default function Comida() {
     const producto = {
       nombre: "Par Pets gato paté de pescado 160g",
       precio: 9.90,
-      imagen: "/imagenes/Comida/Humedo8.jpg"
+      imagen: "./imagenes/Comida/Humedo8.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -200,7 +200,7 @@ export default function Comida() {
     const producto = {
       nombre: "Snout Hueso Deshidratado Minibone Ahumado De Cerdo",
       precio: 16.90,
-      imagen: "/imagenes/Comida/Snack1.jpg"
+      imagen: "./imagenes/Comida/Snack1.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -210,7 +210,7 @@ export default function Comida() {
     const producto = {
       nombre: "Soft Duck Jerky Strips",
       precio: 19.90,
-      imagen: "/imagenes/Comida/Snack2.jpg"
+      imagen: "./imagenes/Comida/Snack2.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -220,7 +220,7 @@ export default function Comida() {
     const producto = {
       nombre: "Naturalistic Tiras De Cordero 100 g",
       precio: 13.90,
-      imagen: "/imagenes/Comida/Snack3.jpg"
+      imagen: "./imagenes/Comida/Snack3.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -230,7 +230,7 @@ export default function Comida() {
     const producto = {
       nombre: "Carnitas Tradicional 30g",
       precio: 5.90,
-      imagen: "/imagenes/Comida/Snack4.jpg"
+      imagen: "./imagenes/Comida/Snack4.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -240,7 +240,7 @@ export default function Comida() {
     const producto = {
       nombre: "Churu Sabor Pollo con Camarón 60Gr",
       precio: 12.90,
-      imagen: "/imagenes/Comida/Snack5.jpg"
+      imagen: "./imagenes/Comida/Snack5.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -250,7 +250,7 @@ export default function Comida() {
     const producto = {
       nombre: "Dentalife Gatos 40g Xl",
       precio: 9.90,
-      imagen: "/imagenes/Comida/Snack6.jpg"
+      imagen: "./imagenes/Comida/Snack6.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -260,7 +260,7 @@ export default function Comida() {
     const producto = {
       nombre: "Rambala Bites Tarta De Pescado 100 g",
       precio: 16.90,
-      imagen: "/imagenes/Comida/Snack7.jpg"
+      imagen: "./imagenes/Comida/Snack7.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -270,7 +270,7 @@ export default function Comida() {
     const producto = {
       nombre: "Gnawlers Lick'N'Likable Yogurt & Arándanos 100Gr",
       precio: 13.90,
-      imagen: "/imagenes/Comida/Snack8.jpg"
+      imagen: "./imagenes/Comida/Snack8.jpg"
     };
     carrito.agregar(producto);
     carrito.abrir();
@@ -602,3 +602,4 @@ export default function Comida() {
     </div>
   );
 }
+

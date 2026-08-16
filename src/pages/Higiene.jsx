@@ -47,7 +47,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Shampoo Mimaskot',
       precio: 24.90,
-      imagen: '/imagenes/shampo-perro.webp'
+      imagen: './imagenes/shampo-perro.webp'
     }
 
     carrito.agregar(producto)
@@ -58,7 +58,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Acondicionador',
       precio: 22.90,
-      imagen: '/imagenes/acondicionador-perro.jpg'
+      imagen: './imagenes/acondicionador-perro.jpg'
     }
 
     carrito.agregar(producto)
@@ -69,7 +69,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Limpieza dental',
       precio: 18.90,
-      imagen: '/imagenes/limpieza-dental.webp'
+      imagen: './imagenes/limpieza-dental.webp'
     }
 
     carrito.agregar(producto)
@@ -80,7 +80,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Toallitas húmedas',
       precio: 16.90,
-      imagen: '/imagenes/toallas-higienicas.jpg'
+      imagen: './imagenes/toallas-higienicas.jpg'
     }
 
     carrito.agregar(producto)
@@ -91,7 +91,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Perfume mascotas',
       precio: 28.90,
-      imagen: '/imagenes/perfume.jpg'
+      imagen: './imagenes/perfume.jpg'
     }
 
     carrito.agregar(producto)
@@ -102,7 +102,7 @@ export default function Higiene() {
     const producto = {
       nombre: 'Cepillo removedor',
       precio: 19.90,
-      imagen: '/imagenes/cepillo.png'
+      imagen: './imagenes/cepillo.png'
     }
 
     carrito.agregar(producto)
@@ -405,4 +405,5 @@ export default function Higiene() {
     </div>
   );
 }
+
 
