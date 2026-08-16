@@ -361,7 +361,7 @@ export default function Comida() {
             <h3>Cat Chow Esterilizado Defense Plus 3kg</h3>
             <p>Garantiza una excelente palatabilidad</p>
             <h2>S/ 57.90</h2>
-            <button className="btn-comprar" onClick={agregarCatchow}>Comprar</button>
+            <button className="btn-comprar" onClick={agregarCatChow}>Comprar</button>
           </div>
           <div className="card" data-mascota="perros" data-marca="ricocan" data-tipo="humedo">
             <img src="/imagenes/Comida/Humedo1.jpg" alt="Humedo1" />
@@ -441,7 +441,7 @@ export default function Comida() {
             <h3>Soft Duck Jerky Strips</h3>
             <p>Elaborado con ingredientes seleccionados</p>
             <h2>S/ 19.90</h2>
-            <button className="btn-comprar" onClick={agregarWanpy}>Comprar</button>
+            <button className="btn-comprar" onClick={agregarSoftDuck}>Comprar</button>
           </div>
           <div className="card" data-mascota="perros" data-marca="naturalistic" data-tipo="snacks">
             <img src="/imagenes/Comida/Snack3.jpg" alt="Snack3" />
@@ -457,7 +457,7 @@ export default function Comida() {
             <h3>Carnitas Tradicional 30g</h3>
             <p>Formulación perfectamente adaptada</p>
             <h2>S/ 5.90</h2>
-            <button className="btn-comprar" onClick={agregarMimma}>Comprar</button>
+            <button className="btn-comprar" onClick={agregarCarnitas}>Comprar</button>
           </div>
           <div className="card" data-mascota="gatos" data-marca="churu" data-tipo="snacks">
             <img src="/imagenes/Comida/Snack5.jpg" alt="Snack5" />
