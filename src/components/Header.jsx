@@ -34,7 +34,7 @@ export default function Header() {
 
       <section className="navbar-principal">
         <Link className="imagen" to="/">
-          <img src="/imagenes/logo.png" alt="Logo PetLove" />
+          <img src="./imagenes/logo.png" alt="Logo PetLove" />
         </Link>
 
         <nav className="menus">
@@ -69,3 +69,4 @@ export default function Header() {
     </header>
   )
 }
+

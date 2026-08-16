@@ -1,4 +1,4 @@
-﻿import FiltrosCatalogo from "../components/FiltrosCatalogo";
+import FiltrosCatalogo from "../components/FiltrosCatalogo";
 import { useState } from "react";
 import { useCarrito } from "../context/CarritoContext.jsx";
 
@@ -114,7 +114,7 @@ export default function Higiene() {
       <main className="main-catalogo">
         <section className="seccion-encabezado-catalogo">
           <p className="paginacion">
-            <a href="/">Inicio</a> &gt; <span>Higiene</span>
+            <a href="#/">Inicio</a> &gt; <span>Higiene</span>
           </p>
           <div className="encabezado-contenido">
             <div className="texto-encabezado">
@@ -211,7 +211,7 @@ export default function Higiene() {
 
             <div className="card-producto-item" style={{order: obtenerOrdenProducto(24.90,1)}}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/shampo-perro.webp" alt="Shampoo Mimaskot" />
+                <img src="./imagenes/shampo-perro.webp" alt="Shampoo Mimaskot" />
               </div>
               <div className="info-producto-item">
                 <h3>Shampoo Mimaskot</h3>
@@ -238,7 +238,7 @@ export default function Higiene() {
             (presentacionElegida === 'todas' || presentacionElegida === 'pequena') && (
             <div className="card-producto-item" style={{ order: obtenerOrdenProducto(22.90, 2) }}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/acondicionador-perro.jpg" alt="Acondicionador" />
+                <img src="./imagenes/acondicionador-perro.jpg" alt="Acondicionador" />
               </div>
               <div className="info-producto-item">
                 <h3>Acondicionador</h3>
@@ -265,7 +265,7 @@ export default function Higiene() {
              (presentacionElegida === 'todas' || presentacionElegida === 'mediana') && (
             <div className="card-producto-item" style={{ order: obtenerOrdenProducto(18.90, 3) }}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/limpieza-dental.webp" alt="Limpieza dental" />
+                <img src="./imagenes/limpieza-dental.webp" alt="Limpieza dental" />
               </div>
               <div className="info-producto-item">
                 <h3>Limpieza dental</h3>
@@ -292,7 +292,7 @@ export default function Higiene() {
              (presentacionElegida === 'todas' || presentacionElegida === 'mediana') && (
             <div className="card-producto-item" style={{ order: obtenerOrdenProducto(16.90, 4) }}>
               <div className="imagen-producto-item">
-                <img src="/imagenes/toallas-higienicas.jpg" alt="Toallitas húmedas" />
+                <img src="./imagenes/toallas-higienicas.jpg" alt="Toallitas húmedas" />
               </div>
               <div className="info-producto-item">
                 <h3>Toallitas húmedas</h3>
@@ -405,3 +405,4 @@ export default function Higiene() {
     </div>
   );
 }
+

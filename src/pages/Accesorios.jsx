@@ -1,9 +1,9 @@
-﻿export default function Accesorios() {
+export default function Accesorios() {
   return (
 <div className="pagina-accesorios">
   <main className="main-catalogo">
     <section className="seccion-encabezado-catalogo">
-      <p className="breadcrumb"><a href="/">Inicio</a> &gt; <span>Accesorios</span></p>
+      <p className="breadcrumb"><a href="#/">Inicio</a> &gt; <span>Accesorios</span></p>
       <div className="encabezado-contenido">
         <div className="texto-encabezado">
           <h1>Accesorios para tu mascota</h1>
@@ -47,7 +47,7 @@
       <section className="grid-productos-catalogo">
         <div className="card-producto-item">
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/collar.jpg" alt="Collar de nylon" />
+            <img src="./imagenes/Accesorios/collar.jpg" alt="Collar de nylon" />
           </div>
           <div className="info-producto-item">
             <h3>Collar de nylon</h3>
@@ -67,7 +67,7 @@
         </div>
         <div className="card-producto-item">
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/correa.jpg" alt="Correa retractil" />
+            <img src="./imagenes/Accesorios/correa.jpg" alt="Correa retractil" />
           </div>
           <div className="info-producto-item">
             <h3>Correa retráctil</h3>
@@ -87,7 +87,7 @@
         </div>
         <div className="card-producto-item">
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/cama.jpg" alt="Cama acolchada" />
+            <img src="./imagenes/Accesorios/cama.jpg" alt="Cama acolchada" />
           </div>
           <div className="info-producto-item">
             <h3>Cama acolchada</h3>
@@ -107,7 +107,7 @@
         </div>
         <div className="card-producto-item">
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/plato.jpg" alt="Plato de acero" />
+            <img src="./imagenes/Accesorios/plato.jpg" alt="Plato de acero" />
           </div>
           <div className="info-producto-item">
             <h3>Plato de acero</h3>
@@ -127,7 +127,7 @@
         </div>
         <div className="card-producto-item">
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/transportadora.jpg" alt="Transportadora" />
+            <img src="./imagenes/Accesorios/transportadora.jpg" alt="Transportadora" />
           </div>
           <div className="info-producto-item">
             <h3>Transportadora</h3>
@@ -147,7 +147,7 @@
         </div>
         <div className="card-producto-item">
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/arnes.jpg" alt="Arnes ajustable" />
+            <img src="./imagenes/Accesorios/arnes.jpg" alt="Arnes ajustable" />
           </div>
           <div className="info-producto-item">
             <h3>Arnés ajustable</h3>
@@ -203,4 +203,5 @@
 </div>
   )
 }
+
 

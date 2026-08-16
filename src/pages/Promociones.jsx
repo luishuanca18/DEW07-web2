@@ -1,4 +1,4 @@
-﻿export default function Promociones() {
+export default function Promociones() {
   return (
 <div className="pagina-promociones">
   <main className="main-promociones">
@@ -11,40 +11,40 @@
         <div className="info-banner-promo">
           <h2>20% de descuento en alimentos</h2>
           <p>Oferta por tiempo limitado.</p>
-          <a href="/comida" className="btn-banner-promo">Ver productos</a>
+          <a href="#/comida" className="btn-banner-promo">Ver productos</a>
         </div>
         <div className="imagen-banner-promo">
-          <img src="/imagenes/comidas-varias.png" alt="20% descuento alimentos" />
+          <img src="./imagenes/comidas-varias.png" alt="20% descuento alimentos" />
         </div>
       </div>
       <div className="card-banner-promo promo-higiene">
         <div className="info-banner-promo">
           <h2>15% de descuento en higiene</h2>
           <p>Oferta por tiempo limitado.</p>
-          <a href="/higiene" className="btn-banner-promo">Ver productos</a>
+          <a href="#/higiene" className="btn-banner-promo">Ver productos</a>
         </div>
         <div className="imagen-banner-promo">
-          <img src="/imagenes/higiene1.jpg" alt="15% descuento higiene" />
+          <img src="./imagenes/higiene1.jpg" alt="15% descuento higiene" />
         </div>
       </div>
       <div className="card-banner-promo promo-juguetes">
         <div className="info-banner-promo">
           <h2>2x1 en juguetes seleccionados</h2>
           <p>Oferta por tiempo limitado.</p>
-          <a href="/juguetes" className="btn-banner-promo">Ver productos</a>
+          <a href="#/juguetes" className="btn-banner-promo">Ver productos</a>
         </div>
         <div className="imagen-banner-promo">
-          <img src="/imagenes/Juguetes1.jpg" alt="2x1 juguetes" />
+          <img src="./imagenes/Juguetes1.jpg" alt="2x1 juguetes" />
         </div>
       </div>
       <div className="card-banner-promo promo-delivery">
         <div className="info-banner-promo">
           <h2>Envío gratis desde S/ 120</h2>
           <p>Oferta por tiempo limitado.</p>
-          <a href="/" className="btn-banner-promo">Ver productos</a>
+          <a href="#/" className="btn-banner-promo">Ver productos</a>
         </div>
         <div className="imagen-banner-promo">
-          <img src="/imagenes/carro-delivery.png" alt="Envio gratis" />
+          <img src="./imagenes/carro-delivery.png" alt="Envio gratis" />
         </div>
       </div>
     </section>
@@ -84,4 +84,5 @@
 </div>
   )
 }
+
 

@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useCarrito } from "../context/CarritoContext.jsx";
 
 const productos = [
@@ -183,7 +183,7 @@ export default function Juguetes() {
 
         <section className="banner">
           <img
-            src="/imagenes/peroygatomascota.png"
+            src="./imagenes/peroygatomascota.png"
             alt="Perritos jugando"
           />
         </section>
@@ -361,4 +361,5 @@ export default function Juguetes() {
     </div>
   );
 }
+
 
