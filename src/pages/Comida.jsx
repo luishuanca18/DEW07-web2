@@ -178,7 +178,7 @@ export default function Comida() {
     carrito.agregar(producto)
     carrito.abrir()
   }
-  function agregarSoftDuck() {
+  function agregarWanpy() {
     const producto = {
       nombre: "Soft Duck Jerky Strips",
       precio: 19.90,
@@ -198,7 +198,7 @@ export default function Comida() {
     carrito.agregar(producto)
     carrito.abrir()
   }
-  function agregarCarnitas() {
+  function agregarMimma() {
     const producto = {
       nombre: "Carnitas Tradicional 30g",
       precio: 5.90,
@@ -393,7 +393,7 @@ export default function Comida() {
             <h3>Canbo Dog Paté Flexibilidad y Movilidad 330g</h3>
             <p>Promueven la salud articular</p>
             <h2>S/ 12.90</h2>
-            <button className="btn-comprar" onClick={agregarCanboVerde}>Comprar</button>
+            <button className="btn-comprar" onClick={agregarCanboDog}>Comprar</button>
           </div>
           <div className="card" data-mascota="gatos" data-marca="fancy" data-tipo="humedo">
             <img src="/imagenes/Comida/Humedo5.jpg" alt="Humedo5" />
