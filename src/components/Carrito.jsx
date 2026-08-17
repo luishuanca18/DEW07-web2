@@ -1,11 +1,28 @@
+import { useState } from 'react'
 import { useCarrito } from '../context/CarritoContext.jsx'
 
 export default function Carrito() {
   const carrito = useCarrito()
+  const [compraRealizada, setCompraRealizada] = useState(false)
+
+  function finalizarCompra() {
+  if (carrito.productos.length === 0) {
+    return
+  }
+
+  carrito.vaciar()
+  setCompraRealizada(true)
+}
+  
+  function cerrarCompra() {
+    setCompraRealizada(false)
+  }
+
   const faltaParaEnvioGratis = Math.max(0, 80 - carrito.total)
   const porcentajeEnvio = Math.min(100, (carrito.total / 80) * 100)
 
   return (
+    <>  
     <aside className={`panel-carrito ${carrito.abierto ? 'activo' : ''}`} aria-hidden={!carrito.abierto}>
       <div className="carrito-header">
         <div>
@@ -55,8 +72,23 @@ export default function Carrito() {
         <strong>S/ {carrito.total.toFixed(2)}</strong>
       </div>
       <p className="nota-envio-carrito">El envío se calcula al finalizar la compra.</p>
-      <button type="button" className="btn-finalizar-compra">Finalizar compra</button>
+      <button type="button" className="btn-finalizar-compra" onClick={finalizarCompra}>Finalizar compra</button>
       <button type="button" className="btn-seguir-comprando" onClick={carrito.cerrar}>Seguir comprando</button>
+
     </aside>
+          {compraRealizada && (
+        <div className="fondo-mensaje-enviado">
+          <div className="ventana-mensaje-enviado">
+            <i className="bi bi-check-circle-fill"></i>
+
+            <h3>Compra realizada</h3>
+
+            <button type="button" onClick={cerrarCompra}>
+              Aceptar
+            </button>
+          </div>
+        </div>
+      )}
+      </>
   )
 }

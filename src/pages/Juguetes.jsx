@@ -1,11 +1,11 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useCarrito } from "../context/CarritoContext.jsx";
 
 const productos = [
   {
     nombre: "Mordedor de hueso",
     precio: 25.90,
-    imagen: "/imagenes/Juguetes/MordedorDehueso.jpg",
+    imagen: "./imagenes/Juguetes/MordedorDehueso.jpg",
     mascota: "perros",
     edad: "adulto",
     tamaño: "grande",
@@ -13,7 +13,7 @@ const productos = [
   {
     nombre: "Mordedor Dental",
     precio: 18.90,
-    imagen: "/imagenes/Juguetes/MordedorDental.png",
+    imagen: "./imagenes/Juguetes/MordedorDental.png",
     mascota: "perros",
     edad: "adulto",
     tamaño: "mediano",
@@ -21,7 +21,7 @@ const productos = [
   {
     nombre: "Mordedor de nylon",
     precio: 30.90,
-    imagen: "/imagenes/Juguetes/MordedorNylon.png",
+    imagen: "./imagenes/Juguetes/MordedorNylon.png",
     mascota: "perros",
     edad: "adulto",
     tamaño: "grande",
@@ -29,7 +29,7 @@ const productos = [
   {
     nombre: "Mordedor de Pollo",
     precio: 27.90,
-    imagen: "/imagenes/Juguetes/MordedorPollo.jpg",
+    imagen: "./imagenes/Juguetes/MordedorPollo.jpg",
     mascota: "perros",
     edad: "cachorro",
     tamaño: "mediano",
@@ -37,7 +37,7 @@ const productos = [
   {
     nombre: "Pelota de Goma",
     precio: 22.90,
-    imagen: "/imagenes/Juguetes/PelotaGoma.png",
+    imagen: "./imagenes/Juguetes/PelotaGoma.png",
     mascota: "perros",
     edad: "cachorro",
     tamaño: "pequeño",
@@ -45,7 +45,7 @@ const productos = [
   {
     nombre: "Pelota de tenis",
     precio: 35.90,
-    imagen: "/imagenes/Juguetes/PelotaTenis.png",
+    imagen: "./imagenes/Juguetes/PelotaTenis.png",
     mascota: "perros",
     edad: "adulto",
     tamaño: "mediano",
@@ -53,7 +53,7 @@ const productos = [
   {
     nombre: "Pelota de Sonido",
     precio: 22.90,
-    imagen: "/imagenes/Juguetes/PelotaSonido.jpg",
+    imagen: "./imagenes/Juguetes/PelotaSonido.jpg",
     mascota: "perros",
     edad: "cachorro",
     tamaño: "pequeño",
@@ -61,7 +61,7 @@ const productos = [
   {
     nombre: "Pelota Dispensadora",
     precio: 45.90,
-    imagen: "/imagenes/Juguetes/PelotaDispensadora.webp",
+    imagen: "./imagenes/Juguetes/PelotaDispensadora.webp",
     mascota: "perros",
     edad: "adulto",
     tamaño: "grande",
@@ -69,7 +69,7 @@ const productos = [
   {
     nombre: "Peluche para perro forma de ositos",
     precio: 22.90,
-    imagen: "/imagenes/Juguetes/PelucheParaperro.png",
+    imagen: "./imagenes/Juguetes/PelucheParaperro.png",
     mascota: "perros",
     edad: "cachorro",
     tamaño: "mediano",
@@ -77,7 +77,7 @@ const productos = [
   {
     nombre: "Peluche para perros forma de patito",
     precio: 22.90,
-    imagen: "/imagenes/Juguetes/PeluchePerro.jpg",
+    imagen: "./imagenes/Juguetes/PeluchePerro.jpg",
     mascota: "perros",
     edad: "cachorro",
     tamaño: "mediano",
@@ -85,7 +85,7 @@ const productos = [
   {
     nombre: "Peluche para perros forma de pollo a la brasa",
     precio: 22.90,
-    imagen: "/imagenes/Juguetes/Peluchepollo.jpg",
+    imagen: "./imagenes/Juguetes/Peluchepollo.jpg",
     mascota: "perros",
     edad: "adulto",
     tamaño: "grande",
@@ -93,7 +93,7 @@ const productos = [
   {
     nombre: "Peluche para perros forma de puercoespin",
     precio: 45.90,
-    imagen: "/imagenes/Juguetes/PeluchePrros.png",
+    imagen: "./imagenes/Juguetes/PeluchePrros.png",
     mascota: "perros",
     edad: "adulto",
     tamaño: "grande",
@@ -101,7 +101,7 @@ const productos = [
   {
     nombre: "Cuadrado para gatos",
     precio: 22.90,
-    imagen: "/imagenes/Juguetes/CuadradoParaGatos.jpg",
+    imagen: "./imagenes/Juguetes/CuadradoParaGatos.jpg",
     mascota: "gatos",
     edad: "adulto",
     tamaño: "mediano",
@@ -109,7 +109,7 @@ const productos = [
   {
     nombre: "Ratón para gatos",
     precio: 22.90,
-    imagen: "/imagenes/Juguetes/RatonParagatos.webp",
+    imagen: "./imagenes/Juguetes/RatonParagatos.webp",
     mascota: "gatos",
     edad: "cachorro",
     tamaño: "pequeño",
@@ -117,7 +117,7 @@ const productos = [
   {
     nombre: "Túnel para gatos",
     precio: 22.90,
-    imagen: "/imagenes/Juguetes/TunelParaGato.jpg",
+    imagen: "./imagenes/Juguetes/TunelParaGato.jpg",
     mascota: "gatos",
     edad: "adulto",
     tamaño: "grande",
@@ -125,7 +125,7 @@ const productos = [
   {
     nombre: "Varita juguete para gatos",
     precio: 45.90,
-    imagen: "/imagenes/Juguetes/VaritaJugueteLoro.webp",
+    imagen: "./imagenes/Juguetes/VaritaJugueteLoro.webp",
     mascota: "gatos",
     edad: "adulto",
     tamaño: "mediano",
@@ -183,7 +183,7 @@ export default function Juguetes() {
 
         <section className="banner">
           <img
-            src="/imagenes/peroygatomascota.png"
+            src="./imagenes/peroygatomascota.png"
             alt="Perritos jugando"
           />
         </section>
@@ -361,4 +361,6 @@ export default function Juguetes() {
     </div>
   );
 }
+
+
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿import FiltrosCatalogo from "../components/FiltrosCatalogo";
 import { useState } from "react";
 import { useCarrito } from "../context/CarritoContext.jsx";
@@ -189,11 +190,14 @@ export default function Accesorios() {
         carrito.abrir()
     }
 
+=======
+export default function Accesorios() {
+>>>>>>> 15c075b01a8b6ec09a6eea50fec0a98ce33913f0
   return (
 <div className="pagina-accesorios">
   <main className="main-catalogo">
     <section className="seccion-encabezado-catalogo">
-      <p className="breadcrumb"><a href="/">Inicio</a> &gt; <span>Accesorios</span></p>
+      <p className="breadcrumb"><a href="#/">Inicio</a> &gt; <span>Accesorios</span></p>
       <div className="encabezado-contenido">
         <div className="texto-encabezado">
           <h1>Accesorios para tu mascota</h1>
@@ -243,7 +247,7 @@ export default function Accesorios() {
 
         <div className="card-producto-item" style={{order: obtenerOrdenProducto(19.90,1)}}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/collar.jpg" alt="Collar de nylon" />
+            <img src="./imagenes/Accesorios/collar.jpg" alt="Collar de nylon" />
           </div>
           <div className="info-producto-item">
             <h3>Collar de nylon</h3>
@@ -268,7 +272,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'pequenio') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(49.90, 2) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/correa.jpg" alt="Correa retractil" />
+            <img src="./imagenes/Accesorios/correa.jpg" alt="Correa retractil" />
           </div>
           <div className="info-producto-item">
             <h3>Correa retráctil</h3>
@@ -293,7 +297,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'mediano') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(79.90, 3) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/cama.jpg" alt="Cama acolchada" />
+            <img src="./imagenes/Accesorios/cama.jpg" alt="Cama acolchada" />
           </div>
           <div className="info-producto-item">
             <h3>Cama acolchada</h3>
@@ -317,7 +321,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'pequenio') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(15.90, 4) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/plato.jpg" alt="Plato de acero" />
+            <img src="./imagenes/Accesorios/plato.jpg" alt="Plato de acero" />
           </div>
           <div className="info-producto-item">
             <h3>Plato de acero</h3>
@@ -341,7 +345,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'grande') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(89.90, 5) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/transportadora.jpg" alt="Transportadora" />
+            <img src="./imagenes/Accesorios/transportadora.jpg" alt="Transportadora" />
           </div>
           <div className="info-producto-item">
             <h3>Transportadora</h3>
@@ -365,7 +369,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'mediano') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(34.90, 6) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/arnes.jpg" alt="Arnes ajustable" />
+            <img src="./imagenes/Accesorios/arnes.jpg" alt="Arnes ajustable" />
           </div>
           <div className="info-producto-item">
             <h3>Arnés ajustable</h3>
@@ -567,4 +571,5 @@ export default function Accesorios() {
 </div>
   )
 }
+
 

@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="footer-contenedor">
         <section className="footer-columna footer-marca">
           <Link className="footer-logo" to="/">
-            <img src="/imagenes/logo.png" alt="PetLove Logo" />
+            <img src="./imagenes/logo.png" alt="PetLove Logo" />
           </Link>
 
           <p className="slogan-footer">
@@ -76,12 +76,13 @@ export default function Footer() {
         </p>
 
         <div className="metodos-pago">
-          <img src="/imagenes/visa.png" alt="Visa" />
-          <img src="/imagenes/Mastercard.png" alt="Mastercard" />
-          <img src="/imagenes/Yape.png" alt="Yape" />
-          <img src="/imagenes/Plin.png" alt="Plin" />
+          <img src="./imagenes/visa.png" alt="Visa" />
+          <img src="./imagenes/Mastercard.png" alt="Mastercard" />
+          <img src="./imagenes/Yape.png" alt="Yape" />
+          <img src="./imagenes/Plin.png" alt="Plin" />
         </div>
       </div>
     </footer>
   )
 }
+

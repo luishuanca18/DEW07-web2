@@ -58,6 +58,10 @@ export function CarritoProvider(props) {
     }
   }
 
+  function vaciarCarrito() {
+    setProductos([])
+  }
+
   let total = 0
 
   for (let posicion = 0; posicion < productos.length; posicion++) {
@@ -74,6 +78,7 @@ export function CarritoProvider(props) {
     eliminar: eliminarProducto,
     aumentar: aumentarCantidad,
     disminuir: disminuirCantidad,
+    vaciar: vaciarCarrito,
     total: total
   }
 

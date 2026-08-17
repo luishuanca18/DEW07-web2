@@ -13,7 +13,7 @@ export default function Inicio() {
                 </div>
 
                 <div className="imagen-hero">
-                <img src="/imagenes/animales-hero.png" alt="Perro y gato de PetLove"/>
+                <img src="./imagenes/animales-hero.png" alt="Perro y gato de PetLove"/>
                 </div>
             </div>
 
@@ -66,27 +66,27 @@ export default function Inicio() {
         </div>    
         <div className="imagenes-categorias">
             <div className="cards-categorias">
-                <img src="/imagenes/comida1.webp" alt=""/>
+                <img src="./imagenes/comida1.webp" alt=""/>
                 <p>comida</p>
             </div>
             <div className="cards-categorias">
-                <img src="/imagenes/ropa1.avif" alt=""/>
+                <img src="./imagenes/ropa1.avif" alt=""/>
                 <p>ropa</p>
             </div>
             <div className="cards-categorias">
-                <img src="/imagenes/accesorios1.jpg" alt=""/>
+                <img src="./imagenes/accesorios1.jpg" alt=""/>
                 <p>accesorios</p>
             </div>
             <div className="cards-categorias">
-                <img src="/imagenes/Juguetes1.jpg" alt=""/>
+                <img src="./imagenes/Juguetes1.jpg" alt=""/>
                 <p>juguetes</p>
             </div>
             <div className="cards-categorias">
-                <img src="/imagenes/higiene1.jpg" alt=""/>
+                <img src="./imagenes/higiene1.jpg" alt=""/>
                 <p>higiene</p>
             </div>
             <div className="cards-categorias">
-                <img src="/imagenes/promocion.png" alt=""/>
+                <img src="./imagenes/promocion.png" alt=""/>
                 <p>promocion</p>
             </div>
 
@@ -99,35 +99,35 @@ export default function Inicio() {
         </div> 
          <div className="imagenes-marcas">
             <div className="cards-marcas">
-                <img src="/imagenes/LOGOMIMASKOT.jpg" alt=""/>
+                <img src="./imagenes/LOGOMIMASKOT.jpg" alt=""/>
                 <p>Mimaskot</p>
             </div>
             <div className="cards-marcas">
-                <img src="/imagenes/logo-ricocan-1024x1007.webp" alt=""/>
+                <img src="./imagenes/logo-ricocan-1024x1007.webp" alt=""/>
                 <p>Ricocan</p>
             </div>
             <div className="cards-marcas">
-                <img src="/imagenes/logo-pedigree.png" alt=""/>
+                <img src="./imagenes/logo-pedigree.png" alt=""/>
                 <p>Pedigree</p>
             </div>
             <div className="cards-marcas">
-                <img src="/imagenes/logo-dogshow.png" alt=""/>
+                <img src="./imagenes/logo-dogshow.png" alt=""/>
                 <p>Dog Chow</p>
             </div>
             <div className="cards-marcas">
-                <img src="/imagenes/logo-whiskas.jpg" alt=""/>
+                <img src="./imagenes/logo-whiskas.jpg" alt=""/>
                 <p>Whiskas</p>
             </div>
             <div className="cards-marcas">
-                <img src="/imagenes/logo-royal-canin.png" alt=""/>
+                <img src="./imagenes/logo-royal-canin.png" alt=""/>
                 <p>Royal Canin</p>
             </div>
             <div className="cards-marcas">
-                <img src="/imagenes/logo-proplan.png" alt=""/>
+                <img src="./imagenes/logo-proplan.png" alt=""/>
                 <p>Pro Plan</p>
             </div>
             <div className="cards-marcas">
-                <img src="/imagenes/logo-nutrecan.png" alt=""/>
+                <img src="./imagenes/logo-nutrecan.png" alt=""/>
                 <p>Nutrecan</p>
             </div>
 
@@ -141,7 +141,7 @@ export default function Inicio() {
                     <button className="btn-promociones">Ver productos</button>
                 </div>
                 <div className="imagen-promociones">
-                    <img src="/imagenes/comidas-varias.png" alt="comida varias"/>
+                    <img src="./imagenes/comidas-varias.png" alt="comida varias"/>
                 </div>
             </div>
 
@@ -152,7 +152,7 @@ export default function Inicio() {
                     <button className="btn-promociones2">Aprovechar Promociones</button>
                 </div>
                 <div className="imagen-promociones">
-                    <img src="/imagenes/manchas.png" alt="comida varias"/>
+                    <img src="./imagenes/manchas.png" alt="comida varias"/>
                 </div>
             </div>
 
@@ -163,7 +163,7 @@ export default function Inicio() {
                     <button className="btn-promociones2">Ver productos</button>
                 </div>
                 <div className="imagen-promociones">
-                    <img src="/imagenes/carro-delivery.png" alt="comida varias"/>
+                    <img src="./imagenes/carro-delivery.png" alt="comida varias"/>
                 </div>
             </div>
         </div>
@@ -210,3 +210,4 @@ export default function Inicio() {
     </main>
     )
 }
+
