@@ -182,7 +182,7 @@ function cambiarColor(evento) {
         <div 
         className="card" data-mascota="perro" data-tipo="polo" data-talla="1,2,3,4,5" data-color="gris"
         >
-          <img src="./imagenes/Ropa/Perro/imagen 2.png" alt="Polo deportivo para perro" />
+          <img src="./imagenes/Ropa/Perro/Imagen 2.png" alt="Polo deportivo para perro" />
           <h3>Polo Deportivo</h3>
           <p>Diseño casual para paseos y días frescos.</p>
           <h2>S/ 32.90</h2>
