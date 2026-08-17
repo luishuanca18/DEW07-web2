@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿import FiltrosCatalogo from "../components/FiltrosCatalogo";
+import FiltrosCatalogo from "../components/FiltrosCatalogo";
 import { useState } from "react";
 import { useCarrito } from "../context/CarritoContext.jsx";
 
@@ -190,9 +189,6 @@ export default function Accesorios() {
         carrito.abrir()
     }
 
-=======
-export default function Accesorios() {
->>>>>>> 15c075b01a8b6ec09a6eea50fec0a98ce33913f0
   return (
 <div className="pagina-accesorios">
   <main className="main-catalogo">
