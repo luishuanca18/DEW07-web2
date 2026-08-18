@@ -176,10 +176,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
       <>
 
       {(tipoElegido === "todos" || tipoElegido === "polo") && 
-       (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+       (tallaElegida === "todas" || tallaElegida === "1") &&
       (colorElegido === "todos" || colorElegido === "marron") && (
      <div
-        className="card" data-mascota="perro" data-tipo="polo" data-talla="1,2,3,4,5" data-color="marron"
+        className="card" data-mascota="perro" data-tipo="polo" data-talla="1" data-color="marron"
         >
           <img src="./imagenes/Ropa/Perro/imagen 1.png" alt="Polo animal print para perro" />
           <h3>Polo Animal Print</h3>
@@ -190,13 +190,13 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") &&
-       (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+       (tallaElegida === "todas" || tallaElegida === "1") &&
         (colorElegido === "todos" || colorElegido === "gris") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="polo" data-talla="1,2,3,4,5" data-color="gris"
+        className="card" data-mascota="perro" data-tipo="polo" data-talla="1" data-color="gris"
         >
-          <img src="./imagenes/Ropa/Perro/imagen 2.png" alt="Polo deportivo para perro" />
-          <h3>Polo Deportivo</h3>
+          <img src="./imagenes/Ropa/Perro/Imagen 2.png" alt="Polo deportivo para perro" />
+          <h3>Polo Camisero</h3>
           <p>Diseño casual para paseos y días frescos.</p>
           <h2>S/ 32.90</h2>
           <button type="button" className="btn-comprar" onClick={() => agregarAlCarrito("Polo Deportivo", 32.90, "./imagenes/Ropa/Perro/Imagen 2.png")}>Comprar</button>
@@ -204,10 +204,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
         
         {(tipoElegido === "todos" || tipoElegido === "sueter") && 
-          (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+          (tallaElegida === "todas" || tallaElegida === "1") &&
          (colorElegido === "todos" || colorElegido === "rosado") && (
         <div
-         className="card" data-mascota="perro" data-tipo="sueter" data-talla="1,2,3,4,5" data-color="rosado"
+         className="card" data-mascota="perro" data-tipo="sueter" data-talla="1" data-color="rosado"
          >
           <img src="./imagenes/Ropa/Perro/Imagen 3.png" alt="Sueter rosado para perro" />
           <h3>Sueter Rosado</h3>
@@ -218,10 +218,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "1") &&
         (colorElegido === "todos" || colorElegido === "rosado") && (
 
-        <div className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="rosado"
+        <div className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1" data-color="rosado"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 4.png" alt="Camiseta rosada para perro" />
           <h3>Camiseta rosa de Animal Print</h3>
@@ -232,10 +232,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "2") &&
         (colorElegido === "todos" || colorElegido === "azul") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="azul"
+        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="2" data-color="azul"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 5.png" alt="Camiseta azul para perro" />
           <h3>Camiseta Azul</h3>
@@ -246,11 +246,11 @@ function agregarAlCarrito(nombre, precio, imagen) {
          )}
 
          {(tipoElegido === "todos" || tipoElegido === "vestido") && 
-         (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+         (tallaElegida === "todas" || tallaElegida === "2") &&
          (colorElegido === "todos" || colorElegido === "azul") && (
 
         <div
-         className="card" data-mascota="perro" data-tipo="vestido" data-talla="1,2,3,4,5" data-color="azul"
+         className="card" data-mascota="perro" data-tipo="vestido" data-talla="2" data-color="azul"
          >
           <img src="./imagenes/Ropa/Perro/Imagen 6.png" alt="Vestido azul para perro" />
           <h3>Vestido Floral Azul</h3>
@@ -261,10 +261,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
           )}
 
           {(tipoElegido === "todos" || tipoElegido === "buzo") && 
-          (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+          (tallaElegida === "todas" || tallaElegida === "2") &&
           (colorElegido === "todos" || colorElegido === "verde") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="buzo" data-talla="1,2,3,4,5" data-color="verde"
+        className="card" data-mascota="perro" data-tipo="buzo" data-talla="2" data-color="verde"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 7.png" alt="Buzo verde para perro" />
           <h3>Buzo Verde con capucha</h3>
@@ -275,10 +275,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "Buzo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "2") &&
         (colorElegido === "todos" || colorElegido === "gris") && (
         <div
-         className="card" data-mascota="perro" data-tipo="Buzo" data-talla="1,2,3,4,5" data-color="gris"
+         className="card" data-mascota="perro" data-tipo="Buzo" data-talla="2" data-color="gris"
          >
           <img src="./imagenes/Ropa/Perro/Imagen 8.png" alt="Buzo gris para perro" />
           <h3>Buzo Clásico con capucha </h3>
@@ -289,10 +289,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "2") &&
         (colorElegido === "todos" || colorElegido === "verde") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="verde"
+        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="2" data-color="verde"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 9.png" alt="Camiseta verde para perro" />
           <h3>Camiseta cuadrille</h3>
@@ -303,10 +303,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "3") &&
         (colorElegido === "todos" || colorElegido === "azul") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="azul"
+        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="3" data-color="azul"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 10.png" alt="Camiseta azul estampada para perro" />
           <h3>Camiseta celeste de arcoiris</h3>
@@ -317,10 +317,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "vestido") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "3") &&
          (colorElegido === "todos" || colorElegido === "blanco, rojo") && (
         <div
-         className="card" data-mascota="perro" data-tipo="vestido" data-talla="1,2,3,4,5" data-color="blanco, rojo"
+         className="card" data-mascota="perro" data-tipo="vestido" data-talla="3" data-color="blanco, rojo"
          >
           <img src="./imagenes/Ropa/Perro/Imagen 11.png" alt="Vestido para perro" />
           <h3>Vestido Blanco con fresas rojas</h3>
@@ -331,10 +331,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "disfraz") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "3") &&
         (colorElegido === "todos" || colorElegido === "blanco")&& (
         <div 
-        className="card" data-mascota="perro" data-tipo="disfraz" data-talla="1,2,3,4,5" data-color="blanco"
+        className="card" data-mascota="perro" data-tipo="disfraz" data-talla="3" data-color="blanco"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 12.png" alt="Disfraz vaca para perro" />
           <h3>Disfraz de Vaquita</h3>
@@ -345,10 +345,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "3") &&
         (colorElegido === "todos" || colorElegido === "blanco") && (
         <div
-         className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="blanco"
+         className="card" data-mascota="perro" data-tipo="camiseta" data-talla="3" data-color="blanco"
          >
           <img src="./imagenes/Ropa/Perro/Imagen 13.png" alt="Camiseta estampada para perro" />
           <h3>Camiseta de monitos</h3>
@@ -358,10 +358,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         </div>
          )}
          {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "rojo") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="rojo"
+        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="4" data-color="rojo"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 14.png" alt="Camiseta roja para perro" />
           <h3>Camiseta Roja de algodon</h3>
@@ -372,10 +372,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "verde") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="polo" data-talla="1,2,3,4,5" data-color="verde"
+        className="card" data-mascota="perro" data-tipo="polo" data-talla="4" data-color="verde"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 15.png" alt="Polo verde para perro" />
           <h3>Polo estampado Verde</h3>
@@ -386,10 +386,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "rosado") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="rosado"
+        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="4" data-color="rosado"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 16.png" alt="Camiseta rosada para perro" />
           <h3>Camiseta Rayada</h3>
@@ -400,10 +400,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "azul") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="polo" data-talla="1,2,3,4,5" data-color="azul"
+        className="card" data-mascota="perro" data-tipo="polo" data-talla="4" data-color="azul"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 17.png" alt="Polo azul para perro" />
           <h3>Camiseta tipo camisa Azul</h3>
@@ -414,10 +414,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "marron") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="marron"
+        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="4" data-color="marron"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 18.png" alt="Camiseta elegante para perro" />
           <h3>Camiseta Elegante</h3>
@@ -428,10 +428,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "abrigo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "marron") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="abrigo" data-talla="1,2,3,4,5" data-color="marron"
+        className="card" data-mascota="perro" data-tipo="abrigo" data-talla="4" data-color="marron"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 19.png" alt="Abrigo marrón para perro" />
           <h3>Abrigo Marrón</h3>
@@ -442,10 +442,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "abrigo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "azul") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="abrigo" data-talla="1,2,3,4,5" data-color="azul"
+        className="card" data-mascota="perro" data-tipo="abrigo" data-talla="4" data-color="azul"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 20.png" alt="Abrigo azul para perro" />
           <h3>Abrigo Multicolor</h3>
@@ -456,10 +456,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "5") &&
         (colorElegido === "todos" || colorElegido === "amarillo") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="amarillo"
+        className="card" data-mascota="perro" data-tipo="camiseta" data-talla="5" data-color="amarillo"
         >
           <img src="./imagenes/Ropa/Perro/Imagen 21.png" alt="Camiseta amarilla para perro" />
           <h3>Camiseta Amarilla</h3>
@@ -470,10 +470,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "sueter") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "5") &&
         (colorElegido === "todos" || colorElegido === "rojo") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="sueter" data-talla="1,2,3,4,5" data-color="rojo"
+        className="card" data-mascota="perro" data-tipo="sueter" data-talla="5" data-color="rojo"
         >
           <img src="./imagenes/Ropa/Perro/imagen 22.png" alt="Sueter rojo para perro" />
           <h3>Sueter tejido con cuellito</h3>
@@ -485,10 +485,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
          )}
 
         {(tipoElegido === "todos" || tipoElegido === "disfraz") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "5") &&
         (colorElegido === "todos" || colorElegido === "amarillo") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="disfraz" data-talla="1,2,3,4,5" data-color="amarillo"
+        className="card" data-mascota="perro" data-tipo="disfraz" data-talla="5" data-color="amarillo"
         >
           <img src="./imagenes/Ropa/Perro/imagen 23.png" alt="Disfraz para perro" />
           <h3>Disfraz de abejita</h3>
@@ -500,10 +500,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
          )}
 
         {(tipoElegido === "todos" || tipoElegido === "buzo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "5") &&
         (colorElegido === "todos" || colorElegido === "verde") && (
         <div 
-        className="card" data-mascota="perro" data-tipo="buzo" data-talla="1,2,3,4,5" data-color="verde"
+        className="card" data-mascota="perro" data-tipo="buzo" data-talla="5" data-color="verde"
         >
           <img src="./imagenes/Ropa/Perro/imagen 24.png" alt="Buzo para perro" />
           <h3>Buzo verde estampado</h3>
@@ -519,10 +519,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
          <>
          
          {(tipoElegido === "todos" || tipoElegido === "vestido") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" ||  tallaElegida === "1") &&
         (colorElegido === "todos" || colorElegido === "rosado") && (
         <div 
-        className="card" data-mascota="gato" data-tipo="vestido" data-talla="1,2,3,4,5" data-color="rosado"
+        className="card" data-mascota="gato" data-tipo="vestido" data-talla="1" data-color="rosado"
         >
           <img src="./imagenes/Ropa/Gato/Imagen 1.png" alt="Vestido para gato" />
           <h3>Vestido Floral</h3>
@@ -533,10 +533,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "buzo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" ||  tallaElegida === "1") &&
         (colorElegido === "todos" || colorElegido === "azul") && (
         <div 
-        className="card" data-mascota="gato" data-tipo="buzo" data-talla="1,2,3,4,5" data-color="azul"
+        className="card" data-mascota="gato" data-tipo="buzo" data-talla="1" data-color="azul"
         >
             <img src="./imagenes/Ropa/Gato/imagen 2.png" alt="Abrigo para gato" />
           <h3>Buzo hoddie azul</h3>
@@ -547,10 +547,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
          {(tipoElegido === "todos" || tipoElegido === "sueter") &&
-         (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+         (tallaElegida === "todas" || tallaElegida === "1") &&
          (colorElegido === "todos" || colorElegido === "rosado") && (
         <div
-         className="card" data-mascota="gato" data-tipo="sueter" data-talla="1,2,3,4,5" data-color="rosado"
+         className="card" data-mascota="gato" data-tipo="sueter" data-talla="1" data-color="rosado"
          >
             <img src="./imagenes/Ropa/Gato/imagen 3.png" alt="sueter para gato" />
           <h3>Sueter corazones</h3>
@@ -561,10 +561,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
          )}
 
          {(tipoElegido === "todos" || tipoElegido === "buzo") && 
-         (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+         (tallaElegida === "todas" || tallaElegida === "1") &&
          (colorElegido === "todos" || colorElegido === "gris") && (
         <div 
-        className="card" data-mascota="gato" data-tipo="buzo" data-talla="1,2,3,4,5" data-color="gris"
+        className="card" data-mascota="gato" data-tipo="buzo" data-talla="1" data-color="gris"
         >
             <img src="./imagenes/Ropa/Gato/imagen 4.png" alt="Buzo para gato" />
           <h3>Buzo rayado con capucha</h3>
@@ -575,10 +575,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" ||  tallaElegida === "2") &&
         (colorElegido === "todos" || colorElegido === "verde") && (
         <div 
-        className="card" data-mascota="gato" data-tipo="polo" data-talla="1,2,3,4,5" data-color="verde"
+        className="card" data-mascota="gato" data-tipo="polo" data-talla="2" data-color="verde"
         >
             <img src="./imagenes/Ropa/Gato/imagen 5.png" alt="Polo moderno para gato" />
           <h3>Chomba Urban Green</h3>
@@ -589,11 +589,11 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") &&
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "2") &&
         (colorElegido === "todos" || colorElegido === "verde") && (
 
         <div
-         className="card" data-mascota="gato" data-tipo="polo" data-talla="1,2,3,4,5" data-color="verde"
+         className="card" data-mascota="gato" data-tipo="polo" data-talla="2" data-color="verde"
          >
             <img src="./imagenes/Ropa/Gato/imagen 6.png" alt="Polo casual para gato" />
           <h3>Chomba clasic Olive</h3>
@@ -604,10 +604,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "disfraz") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "2") &&
         (colorElegido === "todos" || colorElegido === "blanco") && (
         <div
-         className="card" data-mascota="gato" data-tipo="disfraz" data-talla="1,2,3,4,5" data-color="blanco"
+         className="card" data-mascota="gato" data-tipo="disfraz" data-talla="2" data-color="blanco"
          >
             <img src="./imagenes/Ropa/Gato/imagen 7.png" alt="Disfraz para gato" />
           <h3>Disfraz de vaquita</h3>
@@ -618,10 +618,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "disfraz") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "2") &&
         (colorElegido === "todos" || colorElegido === "amarillo") && (
         <div
-         className="card" data-mascota="gato" data-tipo="disfraz" data-talla="1,2,3,4,5" data-color="amarillo"
+         className="card" data-mascota="gato" data-tipo="disfraz" data-talla="2" data-color="amarillo"
          >
             <img src="./imagenes/Ropa/Gato/imagen 8.png" alt="Disfraz para gato" />
           <h3>Disfraz de abejita</h3>
@@ -632,10 +632,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "buzo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" ||  tallaElegida === "3") &&
         (colorElegido === "todos" || colorElegido === "amarillo") && (
         <div
-         className="card" data-mascota="gato" data-tipo="buzo" data-talla="1,2,3,4,5" data-color="amarillo"
+         className="card" data-mascota="gato" data-tipo="buzo" data-talla="3" data-color="amarillo"
          >
             <img src="./imagenes/Ropa/Gato/imagen 9.png" alt="Buzo casual para gato" />
           <h3>Hoddie Sunny Casual</h3>
@@ -646,10 +646,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "sueter") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" ||  tallaElegida === "3") &&
         (colorElegido === "todos" || colorElegido === "rojo") && (
         <div
-         className="card" data-mascota="gato" data-tipo="sueter" data-talla="1,2,3,4,5" data-color="rojo"
+         className="card" data-mascota="gato" data-tipo="sueter" data-talla="3" data-color="rojo"
          >
             <img src="./imagenes/Ropa/Gato/imagen 10.png" alt="Sueter rojo para gato" />
           <h3>Sueter Red Winter</h3>
@@ -660,10 +660,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "vestido") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "3") &&
         (colorElegido === "todos" || colorElegido === "rosa") && (
         <div
-         className="card" data-mascota="gato" data-tipo="vestido" data-talla="1,2,3,4,5" data-color="rosa"
+         className="card" data-mascota="gato" data-tipo="vestido" data-talla="3" data-color="rosa"
          >
             <img src="./imagenes/Ropa/Gato/imagen 11.png" alt="Vestido rosa para gato" />
           <h3>Vestido Floral Vintage</h3>
@@ -674,10 +674,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" ||  tallaElegida === "3") &&
         (colorElegido === "todos" || colorElegido === "azul") && (
         <div
-         className="card" data-mascota="gato" data-tipo="polo" data-talla="1,2,3,4,5" data-color="azul"
+         className="card" data-mascota="gato" data-tipo="polo" data-talla="3" data-color="azul"
          >
             <img src="./imagenes/Ropa/Gato/imagen 12.png" alt=" Camisa casual para gato" />
           <h3>Camisa Blue Lines</h3>
@@ -688,10 +688,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "azul") && (
         <div
-         className="card" data-mascota="gato" data-tipo="polo" data-talla="1,2,3,4,5" data-color="azul"
+         className="card" data-mascota="gato" data-tipo="polo" data-talla="4" data-color="azul"
          >
             <img src="./imagenes/Ropa/Gato/imagen 13.png" alt="Chomba casual para gato" />
           <h3>Chomba Blue Pink</h3>
@@ -702,10 +702,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "vestido") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4","5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "rosado") && (
         <div
-         className="card" data-mascota="gato" data-tipo="vestido" data-talla="1,2,3,4,5" data-color="rosado"
+         className="card" data-mascota="gato" data-tipo="vestido" data-talla="4" data-color="rosado"
          >
             <img src="./imagenes/Ropa/Gato/imagen 14.png" alt="Vestido rosado para gato" />
           <h3>Vestido Primavera</h3>
@@ -716,10 +716,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "rosado") && (
         <div
-         className="card" data-mascota="gato" data-tipo="polo" data-talla="1,2,3,4,5" data-color="rosado"
+         className="card" data-mascota="gato" data-tipo="polo" data-talla="4" data-color="rosado"
          >
             <img src="./imagenes/Ropa/Gato/imagen 15.png" alt="Polo casual para gato" />
           <h3>Polo Soft Pink</h3>
@@ -730,10 +730,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "blanco") && (
         <div
-         className="card" data-mascota="gato" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="blanco"
+         className="card" data-mascota="gato" data-tipo="camiseta" data-talla="4" data-color="blanco"
          >
             <img src="./imagenes/Ropa/Gato/imagen 16.png" alt="camiseta manga corta para gato" />
           <h3>Camiseta Classic White</h3>
@@ -744,10 +744,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "sueter") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "rojo") && (
         <div
-         className="card" data-mascota="gato" data-tipo="sueter" data-talla="1,2,3,4,5" data-color="rojo"
+         className="card" data-mascota="gato" data-tipo="sueter" data-talla="4" data-color="rojo"
          >
             <img src="./imagenes/Ropa/Gato/imagen 17.png" alt="Sueter rojo para gato" />
           <h3>Sueter Nordic blanco con Rojo</h3>
@@ -758,10 +758,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "rosado") && (
         <div
-         className="card" data-mascota="gato" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="rosado"
+         className="card" data-mascota="gato" data-tipo="camiseta" data-talla="4" data-color="rosado"
          >
             <img src="./imagenes/Ropa/Gato/imagen 18.png" alt="Camisa rosada para gato" />
           <h3>Camisa Pink elegante</h3>
@@ -772,10 +772,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "disfraz") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "4") &&
         (colorElegido === "todos" || colorElegido === "rojo") && (
         <div
-         className="card" data-mascota="gato" data-tipo="disfraz" data-talla="1,2,3,4,5" data-color="rojo"
+         className="card" data-mascota="gato" data-tipo="disfraz" data-talla="4" data-color="rojo"
          >
             <img src="./imagenes/Ropa/Gato/imagen 19.png" alt="Disfraz rojo para gato" />
           <h3>Disfraz de diablito</h3>
@@ -786,10 +786,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "camiseta") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "5") &&
         (colorElegido === "todos" || colorElegido === "marron") && (
         <div
-         className="card" data-mascota="gato" data-tipo="camiseta" data-talla="1,2,3,4,5" data-color="marron"
+         className="card" data-mascota="gato" data-tipo="camiseta" data-talla="5" data-color="marron"
          >
             <img src="./imagenes/Ropa/Gato/imagen 20.png" alt="Camiseta marrón para gato" />
           <h3>Camiseta marrón rayado </h3>
@@ -800,10 +800,10 @@ function agregarAlCarrito(nombre, precio, imagen) {
         )}
 
         {(tipoElegido === "todos" || tipoElegido === "polo") && 
-        (tallaElegida === "todas" || ["1", "2", "3", "4", "5"].includes(tallaElegida)) &&
+        (tallaElegida === "todas" || tallaElegida === "5") &&
         (colorElegido === "todos" || colorElegido === "azul") && (
         <div
-         className="card" data-mascota="gato" data-tipo="polo" data-talla="1,2,3,4,5" data-color="azul"
+         className="card" data-mascota="gato" data-tipo="polo" data-talla="5" data-color="azul"
          >
             <img src="./imagenes/Ropa/Gato/imagen 21.png" alt="Polo azul para gato" />
           <h3>Polo Azul con estampado</h3>
