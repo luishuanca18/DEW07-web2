@@ -170,9 +170,44 @@ for($i=0;$i -lt 4;$i++){
 Agregar-Celda $p 'pa-garantias' '🌿 Ingredientes de calidad       🏅 Marcas originales       🛡 Compra 100% segura       ✓ Variedad' 60 1110 1080 115 'rounded=1;whiteSpace=wrap;html=1;fillColor=#f5faf6;strokeColor=#dcecdf;fontColor=#168b43;fontSize=14;align=center;'
 Agregar-FooterAlta $p 'pa'
 
+# JUGUETES - BAJA FIDELIDAD
+$p = Nueva-Pagina 'juguetes-baja' 'Juguetes - Baja fidelidad'
+Agregar-CabeceraBaja $p 'jb' 'JUGUETES'
+Agregar-Celda $p 'jb-banner' 'IMAGEN DEL BANNER DE MASCOTAS' 60 210 1080 210 $grisOscuro
+Agregar-Celda $p 'jb-filter' 'FILTRAR JUGUETES<br><br><b>Mascota</b><br>○ Todas<br>○ Perros<br>○ Gatos<br><br><b>Edad</b><br>○ Todas<br>○ Cachorro<br>○ Adulto<br><br><b>Tamaño</b><br>○ Todos<br>○ Pequeño<br>○ Mediano<br>○ Grande<br><br>[ LIMPIAR FILTROS ]' 60 460 250 750 $gris
+Agregar-Celda $p 'jb-search' 'BUSCAR JUGUETE...                                      🔍' 340 460 800 55 $gris
+$posicionesJuguetes = @(@(340,550),@(610,550),@(880,550),@(340,900),@(610,900),@(880,900))
+for($i=0;$i -lt 6;$i++){
+    Agregar-Celda $p "jb-card$i" "IMAGEN DEL JUGUETE<br><br>Nombre del juguete<br>Precio<br><br>[ AGREGAR AL CARRITO ]" $posicionesJuguetes[$i][0] $posicionesJuguetes[$i][1] 230 310 $gris
+}
+Agregar-FooterBaja $p 'jb'
+
+# JUGUETES - ALTA FIDELIDAD
+$p = Nueva-Pagina 'juguetes-alta' 'Juguetes - Alta fidelidad'
+Agregar-CabeceraAlta $p 'ja' 'Juguetes para perros y gatos'
+Agregar-Imagen $p 'ja-banner' 'peroygatomascota.png' '' 60 210 1080 210
+Agregar-Celda $p 'ja-filter' '<b>Filtrar juguetes</b><br><br><b>Mascota</b><br>○ Todas<br>○ Perros<br>○ Gatos<br><br><b>Edad</b><br>○ Todas<br>○ Cachorro<br>○ Adulto<br><br><b>Tamaño</b><br>○ Todos<br>○ Pequeño<br>○ Mediano<br>○ Grande<br><br><br><b>Limpiar filtros</b>' 60 460 230 750 $blanco
+Agregar-Celda $p 'ja-search' 'Buscar juguete...                                                     🔍' 320 460 820 55 'rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#dddddd;fontColor=#888888;fontSize=14;align=left;spacingLeft=25;'
+$juguetes = @(
+    @('Juguetes/MordedorDehueso.jpg','Mordedor de hueso<br><b>S/ 25.90</b>',320,550),
+    @('Juguetes/MordedorDental.png','Mordedor Dental<br><b>S/ 18.90</b>',595,550),
+    @('Juguetes/MordedorNylon.png','Mordedor de nylon<br><b>S/ 30.90</b>',870,550),
+    @('Juguetes/PelotaGoma.png','Pelota de Goma<br><b>S/ 22.90</b>',320,900),
+    @('Juguetes/PelotaTenis.png','Pelota de tenis<br><b>S/ 35.90</b>',595,900),
+    @('Juguetes/RatonParagatos.webp','Ratón para gatos<br><b>S/ 22.90</b>',870,900)
+)
+for($i=0;$i -lt $juguetes.Count;$i++){
+    $ju=$juguetes[$i]
+    Agregar-Celda $p "ja-card$i" '' $ju[2] $ju[3] 240 310 $blanco
+    Agregar-Imagen $p "ja-img$i" $ju[0] '' ($ju[2]+30) ($ju[3]+15) 180 170
+    Agregar-Celda $p "ja-text$i" "$($ju[1])<br><br><b>Agregar al carrito</b>" ($ju[2]+15) ($ju[3]+195) 210 95 'rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=none;fontColor=#222222;fontSize=13;align=center;verticalAlign=top;'
+    Agregar-Celda $p "ja-button$i" 'Agregar al carrito' ($ju[2]+25) ($ju[3]+260) 190 34 $verde
+}
+Agregar-FooterAlta $p 'ja'
+
 $configuracion = New-Object System.Xml.XmlWriterSettings
 $configuracion.Indent = $true
 $configuracion.Encoding = New-Object System.Text.UTF8Encoding($false)
 $escritor = [Xml.XmlWriter]::Create($archivoDrawio, $configuracion)
 $documento.Save($escritor); $escritor.Close()
-Write-Output 'Se agregaron los seis wireframes.'
+Write-Output 'Se actualizaron los wireframes de las páginas.'

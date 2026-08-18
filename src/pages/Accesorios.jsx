@@ -389,7 +389,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'grande') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(104.90, 7) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/camaCuero.jpg" alt="Cama de cuero" />
+            <img src="./imagenes/Accesorios/camaCuero.jpg" alt="Cama de cuero" />
           </div>
           <div className="info-producto-item">
             <h3>Cama de cuero</h3>
@@ -413,7 +413,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'pequenio') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(48.90, 8) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/collarCuero.jpg" alt="Collar de cuero" />
+            <img src="./imagenes/Accesorios/collarCuero.jpg" alt="Collar de cuero" />
           </div>
           <div className="info-producto-item">
             <h3>Collar de cuero</h3>
@@ -437,7 +437,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'pequenio') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(48.90, 9) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/correaCuero.jpg" alt="Correa de cuero" />
+            <img src="./imagenes/Accesorios/correaCuero.jpg" alt="Correa de cuero" />
           </div>
           <div className="info-producto-item">
             <h3>Correa de cuero</h3>
@@ -461,7 +461,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'mediano') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(7.90, 10) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/platoPlastico.jpg" alt="Plato de plástico" />
+            <img src="./imagenes/Accesorios/platoPlastico.jpg" alt="Plato de plástico" />
           </div>
           <div className="info-producto-item">
             <h3>Plato de plástico</h3>
@@ -485,7 +485,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'grande') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(150.90, 11) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/transportadoraAcero.jpg" alt="Transportadora de acero" />
+            <img src="./imagenes/Accesorios/transportadoraAcero.jpg" alt="Transportadora de acero" />
           </div>
           <div className="info-producto-item">
             <h3>Transportadora de acero</h3>
@@ -509,7 +509,7 @@ export default function Accesorios() {
             (tamanioElegido === 'todas' || tamanioElegido === 'grande') && (
         <div className="card-producto-item" style={{ order: obtenerOrdenProducto(120.90, 12) }}>
           <div className="imagen-producto-item">
-            <img src="/imagenes/Accesorios/arnesCuero.jpg" alt="Arnés de cuero" />
+            <img src="./imagenes/Accesorios/arnesCuero.jpg" alt="Arnés de cuero" />
           </div>
           <div className="info-producto-item">
             <h3>Arnés de cuero</h3>
