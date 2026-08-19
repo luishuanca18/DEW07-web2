@@ -29,7 +29,7 @@ function agregarAlCarrito(nombre, precio, imagen) {
   carrito.abrir();
 }
 
-  return (
+  return ( /* //////////////////////////banner */
 <div className="pagina-ropa">
   <section className="banner-ropa">
     <img src= "./imagenes/Ropa/Banner 2.jpg" alt="Banner de ropa para mascotas" className="imagenes-banner2" />
@@ -43,8 +43,8 @@ function agregarAlCarrito(nombre, precio, imagen) {
     </div>
   </section>
 
-  <main className="contenido">
-    <aside className="filtros">
+  <main className="contenido"> {/* ///main */}
+    <aside className="filtros"> {/* ///filtro */}
       <h2>FILTROS</h2>
       <h3>Tipo</h3>
       <label><input type="radio" name="tipo" value="polo" className="filtro-input" onChange={cambiarTipo} checked={tipoElegido === "polo"}
@@ -130,7 +130,7 @@ function agregarAlCarrito(nombre, precio, imagen) {
       
     <button
      type="button"
-    id="Limpiar-filtros"
+    id="Limpiar-filtros" /////////////////////*boton limpiar filtros */
     onClick={() => {
     setTipoElegido("todos");
     setTallaElegida("todas");
@@ -141,8 +141,8 @@ function agregarAlCarrito(nombre, precio, imagen) {
     </button>
     </aside>
 
-    <div className="contenido-productos">
-      <div className="selector-mascota">
+    <div className="contenido-productos">{/*  contenido productos  */}
+      <div className="selector-mascota"> {/* selector mascota */}
 
        <button
          type="button"
