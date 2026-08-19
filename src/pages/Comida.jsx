@@ -277,6 +277,7 @@ export default function Comida() {
   }
 
   return (
+    <main>
     <div className="pagina-comida">
       {/* Carrusel de Bootstrap */}
       <div id="carouselExampleIndicators" className="carousel slide">
@@ -600,6 +601,7 @@ export default function Comida() {
 
       </section>
     </div>
+    </main>
   );
 }
 

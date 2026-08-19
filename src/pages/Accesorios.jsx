@@ -60,7 +60,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Collar de nylon',
         precio: 19.90,
-        imagen: '/imagenes/Accesorios/collar.jpg',
+        imagen: './imagenes/Accesorios/collar.jpg',
       }
 
       carrito.agregar(producto)
@@ -71,7 +71,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Correa retráctil',
         precio: 49.90,
-        imagen: '/imagenes/Accesorios/correa.jpg',
+        imagen: './imagenes/Accesorios/correa.jpg',
       }
 
       carrito.agregar(producto)
@@ -82,7 +82,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Cama acolchada',
         precio: 79.90,
-        imagen: '/imagenes/Accesorios/cama.jpg',
+        imagen: './imagenes/Accesorios/cama.jpg',
       }
 
         carrito.agregar(producto)
@@ -94,7 +94,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Plato de acero',
         precio: 15.90,
-        imagen: '/imagenes/Accesorios/plato.jpg',
+        imagen: './imagenes/Accesorios/plato.jpg',
       }
 
         carrito.agregar(producto)
@@ -105,7 +105,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Transportadora',
         precio: 89.90,
-        imagen: '/imagenes/Accesorios/transportadora.jpg',
+        imagen: './imagenes/Accesorios/transportadora.jpg',
       }
 
         carrito.agregar(producto)
@@ -116,7 +116,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Arnes ajustable',
         precio: 34.90,
-        imagen: '/imagenes/Accesorios/arnes.jpg',
+        imagen: './imagenes/Accesorios/arnes.jpg',
       }
 
         carrito.agregar(producto)
@@ -127,7 +127,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Cama de cuero',
         precio: 104.90,
-        imagen: '/imagenes/Accesorios/camaCuero.jpg',
+        imagen: './imagenes/Accesorios/camaCuero.jpg',
       }
 
         carrito.agregar(producto)
@@ -138,7 +138,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Collar de cuero',
         precio: 48.90,
-        imagen: '/imagenes/Accesorios/collarCuero.jpg',
+        imagen: './imagenes/Accesorios/collarCuero.jpg',
       }
 
         carrito.agregar(producto)
@@ -149,7 +149,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Correa de cuero',
         precio: 48.90,
-        imagen: '/imagenes/Accesorios/correaCuero.jpg',
+        imagen: './imagenes/Accesorios/correaCuero.jpg',
       }
 
         carrito.agregar(producto)
@@ -160,7 +160,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Plato de plástico',
         precio: 7.90,
-        imagen: '/imagenes/Accesorios/platoPlastico.jpg',
+        imagen: './imagenes/Accesorios/platoPlastico.jpg',
       }
 
         carrito.agregar(producto)
@@ -171,7 +171,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Transportadora de acero',
         precio: 150.90,
-        imagen: '/imagenes/Accesorios/transportadoraAcero.jpg',
+        imagen: './imagenes/Accesorios/transportadoraAcero.jpg',
       }
 
         carrito.agregar(producto)
@@ -182,7 +182,7 @@ export default function Accesorios() {
       const producto = {
         nombre: 'Arnés de cuero',
         precio: 120.90,
-        imagen: '/imagenes/Accesorios/arnesCuero.jpg',
+        imagen: './imagenes/Accesorios/arnesCuero.jpg',
       }
 
         carrito.agregar(producto)

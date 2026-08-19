@@ -39,7 +39,7 @@ function agregarAlCarrito(nombre, precio, imagen) {
         Encuentra polos, abrigos, pijamas y disfraces para que tu mascota
         se vea cómoda y adorable.
       </span>
-      <a href="#productos-ropa">Ver productos</a>
+      <a>Ver productos</a>
     </div>
   </section>
 
@@ -170,7 +170,7 @@ function agregarAlCarrito(nombre, precio, imagen) {
        </strong>
       </p>
    
-      <section className="productos" id="productos-ropa">
+      <section className="productos">
 
       {mascotaSeleccionada === "perro" && (
       <>
